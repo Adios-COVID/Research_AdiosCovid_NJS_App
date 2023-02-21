@@ -1,0 +1,49 @@
+.container {
+    padding-top: 2em;
+    display: block;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5vw;
+}
+
+.btn {
+    margin-top: 1em;
+    margin-right: 2em;
+}
+
+.row {
+    padding: 2rem;
+}
+
+.data_repo {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    padding: 5rem;
+}
+
+.agree {
+    margin-left: 1em;
+}
+
+.agree_check {
+    font-family: 'Roboto', sans-serif;
+    padding-left: 1em;
+}
+
+.btn1 a {
+    text-decoration: none;
+}
+
+.terms {
+    margin: 1em;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5vw;
+}
+
+.terms li {
+    margin-bottom: 0.5em;
+}
