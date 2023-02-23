@@ -1,18 +1,18 @@
 import React from 'react';
 import Image from 'next/image'
 import styles from '@/styles/Data.module.css'
+import dataimg1 from '../public/data_img_1.png'
+import dataimg2 from '../public/data_img_2.png'
 
 export default function DataPage() {
     return (
-        <div class="container" className={styles.container}>
-        <div class="row" id="section1">
-            <div className={styles.media}>
+        <div class="container" id="data_page">
+        <div class="row" id="data_row">
+            <div class="media" id="data_media">
                 <Image
-                    src="/data_img_1.png"
-                    alt="..."
-                    className={styles.media_img}
-                    class="mr-3 img-fluid"
-                    priority
+                    src={dataimg1}
+                    alt="Data page First image"
+                    className="data_media_img mr-3"
                 />
 
                 <div class="media-body">
@@ -21,8 +21,8 @@ export default function DataPage() {
                 </div>
             </div>
         </div>
-        <div class="row" className={styles.section3}>
-            <div class="media">
+        <div class="row" id="data_row">
+            <div class="media" id="data_media">
                 <div class="media-body">
                     <h2>Data & Findings</h2>
                     <p>
@@ -30,16 +30,14 @@ export default function DataPage() {
                     </p>
                 </div>
                 <Image
-                    src="/data_img_2.png"
-                    alt="..."
-                    className={styles.media_img}
-                    class="mr-3 img-fluid"
-                    priority
+                    src={dataimg2}
+                    alt="Data page second image"
+                    className="data_media_img mr-3"
                 />
             </div>
         </div>
-        <div class="row" className={styles.section4}>
-            <div className={styles.testbox}>
+        <div class="row" id="section4">
+            <div class="testbox">
                 <form action="/">
                 <div class="banner">
                 <h1 id="form-title">Submit Your Data</h1>
@@ -49,8 +47,8 @@ export default function DataPage() {
                 <hr/>
             <fieldset>
             <legend>Your Information</legend>
-            <div class="item" className={styles.item}>
-                <div class="name-item" className={styles['name-item']}>
+            <div class="item">
+                <div class="name-item">
                 <div>
                 <input type="text" name="code" placeholder="ZIP Code" />
                 </div>
@@ -62,7 +60,7 @@ export default function DataPage() {
             </div>
             </fieldset>
             <div class="btn-block">
-            <button id="submit_button" className={styles.submit_button} type="submit" href="/">SUBMIT</button>
+            <button id="submit_button" type="submit" href="/">SUBMIT</button>
             </div>
                 </form>
             </div>

@@ -1,15 +1,14 @@
 import React from 'react';
-import styles from '@/styles/footer.module.css'
 import Link from "next/link";
 
 export default function Footer() {
     return (
       <footer>
-        <div class="container" className={styles.container}>
-          <div class="row" id="footer" className={styles.footer}>
+        <div class="container">
+          <div class="row" id="footer">
             <div class="col-sm-4">
-              <Link href="/" class="text-danger" className={styles.adio_header}>¡Adiós COVID!</Link>
-              <div id="copyright" className={styles.copyright}>
+              <Link href="/" className="text-danger adio_header">¡Adiós COVID!</Link>
+              <div id="copyright" class="copyright">
                 <i class="fa fa-copyright fa-1x"> 2023 ¡Adiós COVID!. All rights reserved</i>
               </div>
             </div>

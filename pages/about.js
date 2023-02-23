@@ -1,16 +1,18 @@
 import React from 'react';
 import Image from 'next/image'
-import styles from '@/styles/About.module.css'
+import uwimg from '../public/UW.png'
+import lat_img from '../public/Latino_Center_for_Health.png'
+import avatar from '../public/Apple_Avatar.png'
 
 export default function About(props) {
     const personData = props.personData;
     return (
-        <div className="margindesign">
-        <main className={styles.body}>
-            <div className={styles.aboutText}>
-                <section className={styles.aboutText}>
-                    <h1 className={styles.aboutTitle}>Our Thesis</h1>
-                    <p className={styles.aboutText}>
+        <div class="margindesign">
+        <main class="body">
+            <div class="aboutText">
+                <section class="aboutText">
+                    <h1 class="aboutTitle">Our Thesis</h1>
+                    <p class="aboutText">
                     The lack of access to quality medical and health services, coupled with inadequate information and education about Long Covid 
                     has resulted in a public health crisis disproportionately affecting Latino communities in Eastern Washington, particularly those 
                     from low-income and rural backgrounds. This crisis is further exacerbated by a shortage of medical infrastructure, mistrust of the government, 
@@ -22,9 +24,9 @@ export default function About(props) {
                 </section>
                 
                 
-                <section className="space">
-                    <h1 className={styles.aboutTitle}>Who we are</h1>
-                    <p  className={styles.aboutText}>
+                <section class="space">
+                    <h1 class="aboutTitle">Who we are</h1>
+                    <p  class="aboutText">
                     We are a group of 14 undergraduate students from the <a href = "https://ischool.uw.edu/" target="_blank" rel="noopener noreferrer">University of Washington Information School </a> 
                     coming from all different backgrounds and concentrations. Led by Frank Martinez and Dr. Leo Morales, in partnership with the UW 
                     <a href = "https://latinocenterforhealth.org/" target="_blank" rel="noopener noreferrer"> Latino Center for Health </a> and Adios COVID, we have been brought in to 
@@ -35,27 +37,27 @@ export default function About(props) {
                     </p>
                 </section>
 
-                <section className={styles.aboutText}>
-                    <h1 className="Title">Organizations Involved:</h1>
-                    <p className={styles.OrgName}>
+                <section class="aboutText">
+                    <h1 class="Title">Organizations Involved:</h1>
+                    <p class="OrgName">
                         <Image
-                            src="/UW.png"
+                            src={uwimg}
                             alt="UW-pic"
-                            className={styles.logo}
+                            className="logo img-fluid"
                             priority
                         />
                         <b> University of Washington</b>
                     </p>
-                    <p className={styles.OrgName}>
+                    <p className="OrgName">
                         <Image
-                            src="/Latino_Center_for_Health.png"
+                            src={lat_img}
                             alt="Latino-pic"
-                            className={styles.logo}
+                            className="logo"
                             priority
                         />
                         <b> UW Latino Center for Health</b>
                     </p>
-                    <p className={styles.aboutText}>
+                    <p class="aboutText">
                         Huge thanks to everyone from these organizations who helped us along the way! 
                          {/* <ul>
                         <li> Lorem ipsum dolor sit amet, consectetur adipiscing</li>
@@ -63,21 +65,21 @@ export default function About(props) {
                         <li> Lorem ipsum dolor sit amet, consectetur adipiscing</li>
                         </ul> */}
                     </p>
-                    <h1 className="Title">Our Team</h1>
+                    <h1 class="Title">Our Team</h1>
                     <div>
                         <Image
-                            src="/Apple_Avatar.png"
+                            src={avatar}
                             alt="Apple_Avatar-pic"
-                            className={styles.people_avatar}
+                            className="people_avatar"
                             priority
                         />
                         
                     </div>
-                    <p className={styles.aboutText}> 
+                    <p className="aboutText"> 
                         Lorem ipsum dolor sit amet
                         Lorem ipsum dolor sit amet  et dolore magna
                     </p>
-                    <p className={styles.aboutText}>
+                    <p className="aboutText">
                         Lorem ipsum dolor sit amet 
                         Lorem ipsum dolor sit amet  et dolore magna 
                     </p>
