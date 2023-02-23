@@ -1,5 +1,4 @@
 import { useEffect, useState, react } from 'react';
-import styles from '@/styles/repo.module.css'
 
 export default function RepoPage() {
     const [termAgree, setTermAgree] = useState(false);
@@ -19,10 +18,10 @@ export default function RepoPage() {
 
       useEffect(() => canBeSubmitted());
     return (
-        <div class="container" className={styles.container}>
-            <div class="row" className={styles.row}>
+        <div class="container" id="repo_container">
+            <div class="row">
                 <h2>Terms of Usage</h2>
-                <ul class="terms" className={styles.terms}>
+                <ul class="terms">
                     <li>
                         License: The Long COVID data in this repository is licensed under the MIT License. By using the data, you agree to comply with the terms of this license. 
                     </li>
@@ -44,10 +43,10 @@ export default function RepoPage() {
                             class="agree"
                             onClick={(e) => setTermAgree(e.target.checked)}
                             />
-                        <label htmlFor="agree" class="agree_check" className={styles.agree_check}> I agree to the terms of usage.</label>
+                        <label htmlFor="agree" class="agree_check"> I agree to the terms of usage.</label>
                     </div>
                 </div>
-            <div class="row" className={styles.row}>
+            <div class="row">
                 <h2>Disclaimer</h2>
                 <p>The Long COVID data in this repository is provided `&quot;`as is`&quot;` and without warranty of any kind, express or implied. The repository and its contributors make no representations or warranties regarding the accuracy, completeness, reliability, or suitability of the data for any particular purpose. The repository and its contributors shall not be liable for any damages or injuries arising from the use of the data, or for any direct, indirect, incidental, special, or consequential damages arising from any use of the data or the inability to use the data. By using the Long COVID data in this repository, you assume all risks and responsibility for the use of the data. This disclaimer applies to all uses of the data, whether for research, clinical, or other purposes.</p>
                 <div class="form-check">
@@ -56,18 +55,17 @@ export default function RepoPage() {
                         name="disclaimerAgree"
                         id="disclaimerAgree"
                         class="agree"
-                        className={styles.agree}
                         onClick={(e) => setDisclaimerAgree(e.target.checked)}
                         />
                     <label htmlFor="agree" class="agree_check"> I agree to the disclaimer.</label>
                 </div>
             </div>
-            <div class="row" id="data_repo" className={styles.data_repo}>
+            <div class="row" id="data_repo">
                 <h2>Our Data Repository</h2>
                 <p>The Long COVID data repository is a public, open source data repository that contains anonymized data related to the social and demographic impacts of Long COVID. The repository includes both qualitative and quantitative data, collected through surveys, interviews, and web scraping. The data has been contributed by various individuals and organizations, and has been subjected to data cleaning and validation to ensure accuracy and consistency. The repository is intended to support research and analysis of Long COVID, and to inform public health efforts to address the long-term impacts of COVID-19. To access the data repository, you must agree to the terms of usage and disclaimer.</p>
                 <button type="button" 
                         class="col-6 mx-auto btn btn-danger btn-rounded btn-md btn-block"
-                        id="btn1" className={styles.btn1}>
+                        id="btn1">
                     <a href="https://github.com/Adios-COVID/research_adioscovid_app.git" 
                        class="text-light">
                         LINK TO OPEN SOURCE REPOSITORY
