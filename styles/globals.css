@@ -110,13 +110,14 @@ img {
 
   /* Home Page*/
   .banner_main  {
-    height:100vh;
-    display:flex;
-    align-items:center;
-    justify-content:center;
     text-align: center;
+    font-family: 'Roboto', sans-serif;
   }
   
+  #home_banner .row{
+    padding: 4rem;
+  }
+
   .home_p {
     font-size: 1.5vw;
   }
@@ -127,6 +128,8 @@ img {
       padding-right: 0.5em;
       padding-left: 0.5em;
       margin: auto;
+      min-width: 100px;
+      min-height: 100px;
   }
 
   .home-heading {

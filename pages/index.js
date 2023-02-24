@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import { Inter } from '@next/font/google'
 import homepic from "../public/homepage.jpg"
-import persona from "../public/Who.png"
+import persona from "../public/transparent_personas.png"
 import location from "../public/Where.png"
 
 const inter = Inter({ subsets: ['latin'] })
@@ -9,7 +9,7 @@ const inter = Inter({ subsets: ['latin'] })
 export default function Home() {
   return (
     <>
-      <div class="banner_main">
+      <div class="banner_main" id="home_banner">
         <div class="container">
             <div class="row">
               <div class="col-md">
