@@ -7,7 +7,7 @@ export default function Footer() {
         <div class="container">
           <div class="row" id="footer">
             <div class="col-sm-4">
-              <Link href="/" className="text-danger adio_header">¡Adiós COVID!</Link>
+              <Link href="https://adioscovid.org/" target="_blank" rel="noopener noreferrer" className="text-danger adio_header">¡Adiós COVID!</Link>
               <div id="copyright" class="copyright">
                 <i class="fa fa-copyright fa-1x"> 2023 ¡Adiós COVID!. All rights reserved</i>
               </div>
@@ -23,7 +23,7 @@ export default function Footer() {
               <h3>Further Information</h3>
               <ul class="list-group">
                 <li class="list-group-item text-dark">Contact Us:</li>
-                <li class="list-group-item"><a href="mailto:adiosCovid@gmail.com" class="text-dark"><i class="fa fa-envelope" aria-hidden="true"></i> adiosCovid@gmail.com</a></li>
+                <li class="list-group-item"><a href="mailto:research@adioscovid.org" class="text-dark"><i class="fa fa-envelope" aria-hidden="true"></i> research@adioscovid.org</a></li>
               </ul>
             </div>  
           </div>

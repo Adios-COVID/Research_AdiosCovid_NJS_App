@@ -10,6 +10,21 @@ export default function About(props) {
         <div class="margindesign">
         <main class="body">
             <div class="aboutText">
+            <section class="aboutText">
+                    <h1 class="aboutTitle">What is Long COVID?</h1>
+                    <p class="aboutText">
+                    It goes without saying that COVID-19 has impacted the lives of many across the world, but something that is seldom discussed is what happens to the body after 
+                    COVID subsides. Symptoms lingering after an individual has recovered from COVID is what is known as Long COVID <a href = "https://ischool.uw.edu/"> <sup>[1]</sup></a>. These symptoms can range from brain fog to 
+                    depression or anxiety and have an unknown duration as of right now. Even scarier, Long COVID has been noted as a cause of death on certain individuals’ death
+                    certificates, with the highest Long COVID death rate being among American Indian or Alaska Native males ages 85+. Long COVID is still very much under research, 
+                    as there is not a set definition of Long COVID, nor does anybody know what the cause is, all we know is that it is here and it is hitting many communities and 
+                    populations across the world. The wide variety of symptoms affects the everyday life of those who are sick, impacting work, leisure activities, and even their 
+                    wallets. The non-medical side effects of Long COVID are felt across the world in an economic sense. The total economic cost of Long COVID is estimated to sum
+                    to about $3.7 trillion, spanning reduced quality of life, reduced earnings, and increased medical expenses. In the United States, millions are out of work
+                    due to the effect of Long COVID, and this spread is distributed rather unequally between races/ethnicities, thus heavily impacting the economy.
+                    </p>
+                </section>
+
                 <section class="aboutText">
                     <h1 class="aboutTitle">Our Thesis</h1>
                     <p class="aboutText">
