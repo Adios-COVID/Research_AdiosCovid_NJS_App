@@ -17,7 +17,12 @@ export default function DataPage() {
 
                 <div class="media-body">
                     <h2>How We Collect Data</h2>
-                    <p>Our team gathered two types of datasets: qualitative and quantitative data. Qualitative data was collected through surveys and interviews focused on the social aspects affecting individuals with Long COVID. The collected data was anonymized to protect the privacy of participants, with any identifying indicators removed. In addition, we collected quantitative data by performing web scraping and aggregating demographic data from Grant, Douglas, Okanogan, Lincoln, Ferry, Stevens, and Pend Oreille. These datasets were primarily obtained from the U.S. Census, the Washington State Department of Health, the Bureau of Labor Statistics, and the Pew Research Center. To ensure accuracy and consistency, we cleaned and normalized these datasets using Jupyter Notebook.</p>
+                    <p>Our team gathered two types of datasets: qualitative and quantitative data. Qualitative data was collected through surveys and interviews focused 
+                        on the social aspects affecting individuals with Long COVID. The collected data was anonymized to protect the privacy of participants, with any 
+                        identifying indicators removed. In addition, we collected quantitative data by performing web scraping and aggregating demographic data from Grant, 
+                        Douglas, Okanogan, Lincoln, Ferry, Stevens, and Pend Oreille. These datasets were primarily obtained from the U.S. Census, the Washington State
+                        Department of Health, the Bureau of Labor Statistics, and the Pew Research Center. To ensure accuracy and consistency, we cleaned and normalized these
+                        datasets using Jupyter Notebook.</p>
                 </div>
             </div>
         </div>
@@ -26,7 +31,11 @@ export default function DataPage() {
                 <div class="media-body">
                     <h2>Data & Findings</h2>
                     <p>
-                    Based on our extensive research, we have determined that approximately 90,000 Latinos may be suffering from Long COVID, representing approximately 9-10% of the total Latino population. Those with more severe hospitalized conditions have a higher probability of developing Long COVID. Individuals under 18 years of age have a lower probability of developing Long COVID, while those in older age groups have the highest probability. Our research also indicates that female Latinos have a relatively higher probability of developing Long COVID. Even among individuals who were not hospitalized, females have approximately 6% higher probability of experiencing Long COVID compared to males.
+                    Based on our extensive research, we have determined that approximately 90,000 Latinos may be suffering from Long COVID, representing approximately 9-10% of
+                     the total Latino population. Those with more severe hospitalized conditions have a higher probability of developing Long COVID. Individuals under 18 years 
+                     of age have a lower probability of developing Long COVID, while those in older age groups have the highest probability. Our research also indicates that
+                    female Latinos have a relatively higher probability of developing Long COVID. Even among individuals who were not hospitalized, females have approximately 
+                    6% higher probability of experiencing Long COVID compared to males.
                     </p>
                 </div>
                 <Image
