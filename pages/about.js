@@ -59,11 +59,6 @@ export default function About(props) {
                     </p>
                     <p class="aboutText">
                         Huge thanks to everyone from these organizations who helped us along the way! 
-                         {/* <ul>
-                        <li> Lorem ipsum dolor sit amet, consectetur adipiscing</li>
-                        <li> Lorem ipsum dolor sit amet, consectetur adipiscing</li>
-                        <li> Lorem ipsum dolor sit amet, consectetur adipiscing</li>
-                        </ul> */}
                     </p>
                     <h1 class="Title">Our Team</h1>
                     <div>
@@ -72,79 +67,10 @@ export default function About(props) {
                             alt="Apple_Avatar-pic"
                             className="people_avatar"
                             priority
-                        />
-                        
+                        />  
                     </div>
-                    <p className="aboutText"> 
-                        Lorem ipsum dolor sit amet
-                        Lorem ipsum dolor sit amet  et dolore magna
-                    </p>
-                    <p className="aboutText">
-                        Lorem ipsum dolor sit amet 
-                        Lorem ipsum dolor sit amet  et dolore magna 
-                    </p>
                 </section>
             </div>
-
-            {/* <div className="aboutUs">
-                <h1 className="center">Who We Are</h1>
-                <div className="container">
-                    <div className="row">
-                        <div className="col-12 col-md-6 col-xl-3 d-flex">
-                            <div className="cardPeople">
-                                <div className="col-sm-auto col-xl-12">
-                                    <img className="card-img-top" src="img/person1.jpg" alt="XXX Info" />
-                                    <div className="card-body">
-                                        <Link to={'/about/'+personData[0].Name} className="card-title">{personData[0].Name}</Link>
-                                        <p className="card-text">Hobby: design, video</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <div className="col-12 col-md-6 col-xl-3 d-flex">
-                            <div className="cardPeople">
-                                <div className="col-sm-auto col-xl-12">
-                                    <img className="card-img-top" src="img/person2.jpg" alt="XXX Info" />
-                                    <div className="card-body">
-                                        <Link to={'/about/'+personData[1].Name} className="card-title">{personData[1].Name}</Link>
-                                        <p className="card-text">Hobby: Music, video game</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <div className="col-12 col-md-6 col-xl-3 d-flex">
-                            <div className="cardPeople">
-                                <div className="col-sm-auto col-xl-12">
-                                    <img className="card-img-top" src="img/person3.jpg" alt="XXXX Info" />
-                                    <div className="card-body">
-                                        <Link to={'/about/'+personData[2].Name} className="card-title">{personData[2].Name}</Link>
-                                        <p className="card-text">Hobby: Movies, travel</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <div className="col-12 col-md-6 col-xl-3 d-flex">
-                            <div className="cardPeople">
-                                <div className="col-sm-auto col-xl-12">
-                                    <img className="card-img-top" src="img/person4.jpg" alt="=XXX Info" />
-                                    <div className="card-body">
-                                        <Link to={'/about/'+personData[3].Name} className="card-title">{personData[3].Name}</Link>
-                                        <p className="card-text">Hobby:</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div> */}
-
-
         </main >
     </div >
     );
