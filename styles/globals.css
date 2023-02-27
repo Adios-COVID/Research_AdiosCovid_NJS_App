@@ -31,7 +31,7 @@
 .logo {
     width: 20%;
     justify-content: center;
-} 
+}
 
 .people_avatar
 img {
@@ -43,7 +43,7 @@ img {
 
 
 /* Media Query  */
-@media (min-width: 700px) { 
+@media (min-width: 700px) {
     .logo {
        width: 20%;
     }
@@ -76,34 +76,34 @@ img {
     flex-direction: column;
     align-items: center;
   }
-  
+
   #footer{
     font-family: 'Roboto', sans-serif;
     text-align: center;
     padding-left: 3rem;
   }
-  
-  .adio_header, 
+
+  .adio_header,
   .adio_header:active,
   .adio_header:hover {
     font-size: 28px;
     text-decoration: none;
   }
-  
+
   .copyright {
     padding:1em;
     font-size: 12px;
   }
-  
+
   #footer ul li {
     border-color: white;
     padding:1em;
   }
-  
+
   #footer ul li a {
     text-decoration: none;
   }
-  
+
   #footer ul li a:hover {
     text-decoration: underline;
   }
@@ -113,7 +113,7 @@ img {
     text-align: center;
     font-family: 'Roboto', sans-serif;
   }
-  
+
   #home_banner .row{
     padding: 4rem;
   }
@@ -121,7 +121,7 @@ img {
   .home_p {
     font-size: 1.5vw;
   }
-  
+
   .home_img {
       max-width: 100%;
       height: auto;
@@ -135,7 +135,7 @@ img {
   .home-heading {
     padding: 0.5em;
   }
-  
+
   .home_sub_heading {
     color: red ;
     text-align: center;
@@ -165,8 +165,8 @@ img {
 }
 
 #section4 div,
-#section4 form, 
-#section4 input, 
+#section4 form,
+#section4 input,
 #section4 label {
     padding: 0;
     margin: 0;
@@ -175,6 +175,10 @@ img {
     font-size: 13px;
     color: #666;
     line-height: 22px;
+}
+
+#section4 {
+    padding-bottom: 50px;
 }
 
 #section4 legend {
@@ -306,26 +310,26 @@ img {
     min-width:7em;
     min-height:2em;
   }
-  
+
   .navbarDropdown{
     margin-left:30px;
   }
-  
+
 .navbar-brand {
     margin-top: 1em;
     margin-left: 30px;
   }
-  
+
   .navbar-nav > .nav-item {
     margin-top: 0.5em;
     margin-left: 30px;
   }
-  
+
 #access_data {
     margin-left: 10px;
     margin-bottom: 10px;
   }
-  
+
 #access_data_toggle {
     margin: 10px;
     text-decoration: none;
@@ -336,7 +340,7 @@ img {
     font-family: sans-serif;
     text-align: center;
 }
- /* Repo Page*/ 
+ /* Repo Page*/
 
 #repo_container {
     padding-top: 2em;
@@ -376,7 +380,7 @@ img {
 
 #btn1  a{
     text-decoration: none;
-    
+
 }
 
 .terms {
