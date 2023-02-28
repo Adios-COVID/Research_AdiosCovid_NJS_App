@@ -1,6 +1,10 @@
 {
   "/_app": "pages/_app.js",
-  "/_document": "pages/_document.js",
   "/_error": "pages/_error.js",
-  "/": "pages/index.js"
+  "/_document": "pages/_document.js",
+  "/": "pages/index.js",
+  "/news": "pages/news.js",
+  "/about": "pages/about.js",
+  "/RepoPage": "pages/RepoPage.js",
+  "/Data": "pages/Data.js"
 }

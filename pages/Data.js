@@ -1,6 +1,5 @@
 import React from 'react';
 import Image from 'next/image'
-import styles from '@/styles/Data.module.css'
 import dataimg1 from '../public/data_img_1.png'
 import dataimg2 from '../public/data_img_2.png'
 
