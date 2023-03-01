@@ -302,6 +302,13 @@ img {
     width:97%;
 }
 
+.incomeViz {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding:1em;
+}
+
 /* Header Page*/
 .navbar-custom {
     font-family: 'Roboto', sans-serif;

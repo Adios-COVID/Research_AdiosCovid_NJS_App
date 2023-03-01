@@ -29,6 +29,7 @@ ChartJS.register(
   Legend
 );
 
+
 export const options = {
   plugins: {
     title: {
