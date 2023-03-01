@@ -18,6 +18,7 @@ import {
 import Image from 'next/image'
 import dataimg1 from '../public/data_img_1.png'
 import dataimg2 from '../public/data_img_2.png'
+import IncomeVisualization from '../components/Income_viz'
 
 ChartJS.register(
   CategoryScale,
@@ -123,7 +124,7 @@ class Page extends React.Component {
     </div>
 
     <Bar class='barchart' options={options} data={this.props.data} />
-
+    <IncomeVisualization/>
     <div class="row" id="section4">
         <div class="testbox">
             <form action="/">
