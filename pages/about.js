@@ -88,7 +88,7 @@ export default function About(props) {
                             <Image
                                 src={avatar}
                                 alt="Apple_Avatar-pic"
-                                className="people_avatar"
+                                className="people_avatar img-fluid"
                                 priority
                             />
 
