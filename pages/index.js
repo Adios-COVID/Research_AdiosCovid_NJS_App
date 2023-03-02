@@ -3,6 +3,8 @@ import { Inter } from '@next/font/google'
 import homepic from "../public/homepage.jpg"
 import persona from "../public/transparent_personas.png"
 import location from "../public/Where.png"
+import Link from "next/link";
+
 
 const inter = Inter({ subsets: ['latin'] })
 
