@@ -8,11 +8,11 @@ const Navbar = () => {
     
     <div>
     <nav class="navbar navbar-expand-lg navbar-light bg-white justify-content-between navbar-custom">
-      <Link href="/" className="navbar-brand col-2">
+      <Link href="/" className="navbar-brand text-center col-2">
       <Image
                 src={logopic}
                 alt="Adios COVID Research Logo"
-                className="img-fluid img_logo"
+                className="img_fluid img_logo"
         />
       </Link>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
