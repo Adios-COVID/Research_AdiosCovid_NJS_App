@@ -119,7 +119,7 @@ img {
   }
 
   .home_p {
-    font-size: 1.5vw;
+    font-size: 15px;
   }
 
   .home_img {
@@ -317,6 +317,8 @@ img {
 .img_logo {
     min-width:7em;
     min-height:2em;
+    max-width:50%;
+    height:auto;
   }
 
   .navbarDropdown{
