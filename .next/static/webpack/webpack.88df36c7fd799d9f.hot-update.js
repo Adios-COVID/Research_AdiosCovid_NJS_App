@@ -12,7 +12,11 @@ self["webpackHotUpdate_N_E"]("webpack",{},
 /******/ /* webpack/runtime/getFullHash */
 /******/ !function() {
 <<<<<<<< HEAD:.next/static/webpack/webpack.88df36c7fd799d9f.hot-update.js
+<<<<<<<< HEAD:.next/static/webpack/webpack.88df36c7fd799d9f.hot-update.js
 /******/ 	__webpack_require__.h = function() { return "ae61c4a21263c588"; }
+========
+/******/ 	__webpack_require__.h = function() { return "40d2b703b7bf9aff"; }
+>>>>>>>> origin/main:.next/static/webpack/webpack.bd1bc0252f4e7f18.hot-update.js
 ========
 /******/ 	__webpack_require__.h = function() { return "40d2b703b7bf9aff"; }
 >>>>>>>> origin/main:.next/static/webpack/webpack.bd1bc0252f4e7f18.hot-update.js
