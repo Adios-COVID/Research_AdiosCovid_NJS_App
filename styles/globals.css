@@ -141,6 +141,10 @@ img {
     text-align: center;
   }
 
+  #tell_story a {
+    display: block;
+}
+
   /* Data Page*/
   .container {
     display: block;

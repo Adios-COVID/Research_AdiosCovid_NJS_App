@@ -34,7 +34,7 @@ export const options = {
   plugins: {
     title: {
       display: true,
-      text: 'Latinos Population v.s. Total Population in Eastern Washington',
+      text: 'Latino Population v.s. Total Population in Eastern Washington',
     },
   },
   responsive: true,
@@ -74,7 +74,7 @@ class Page extends React.Component {
           stack: 'Stack 0',
         },
         {
-          label: 'Latinos Population',
+          label: 'Latino Population',
           data: latinoPopulation,
           backgroundColor: 'rgb(245, 122, 122)',
           stack: 'Stack 0',
@@ -110,8 +110,8 @@ class Page extends React.Component {
                 <h2>Data & Findings</h2>
                 <p>
                 Based on our extensive research, we have determined that approximately 90,000 Latinos may be suffering from Long COVID, representing approximately 9-10% of
-                 the total Latino population. Those with more severe hospitalized conditions have a higher probability of developing Long COVID. Individuals under 18 years
-                 of age have a lower probability of developing Long COVID, while those in older age groups have the highest probability. Our research also indicates that
+                the total Latino population. Those with more severe hospitalized conditions have a higher probability of developing Long COVID. Individuals under 18 years
+                of age have a lower probability of developing Long COVID, while those in older age groups have the highest probability. Our research also indicates that
                 female Latinos have a relatively higher probability of developing Long COVID. Even among individuals who were not hospitalized, females have approximately
                 6% higher probability of experiencing Long COVID compared to males.
                 </p>
