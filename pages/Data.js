@@ -140,8 +140,14 @@ class Page extends React.Component {
       
         <div class="boxed">
           <div class="media-body">
-            <p>Lorem ipsum dolor sit amet. Sit voluptatem consequatur ea laudantium itaque aut galisum dolorem eum atque harum aut rerum accusamus et omnis voluptatibus qui amet neque. Vel tenetur voluptatum hic officiis excepturi id suscipit quam sit voluptatibus voluptates. Qui tenetur omnis nam sint exercitationem quo porro aliquam ut similique illo.
-              Sit nulla amet aut culpa porro qui architecto consequatur sit molestias vitae ut neque asperiores et minima voluptates At quidem sequi. In illo alias et suscipit veniam ut sint quia et quae deserunt. Sit voluptatem doloribus et tenetur illo qui minima minima. Ea officiis eaque sit porro aperiam eum unde maxime qui possimus minus non quod architecto cum culpa dolores.
+            <p>
+              This bar chart breaks down the estimated Latino population for the counties
+              that we track in Eastern Washington. This data is updated ____________________________, 
+              and is sourced from our API ______________________________
+              The yellow portion of the chart represents the non-Latino population and
+              the red portion represents the Latino population in the given county. Hover over any of the
+              bars to toggle a tooltip, and click on the "Total Population" / "Latino Population" portions of the 
+              key to filter the data to your liking. Please note these numbers are estimates.
             </p>
           </div>
           {/* The visualization below shows how many Latinos there are in each of the Eastern Washington counties that we track. */}
@@ -150,8 +156,12 @@ class Page extends React.Component {
 
       <div class="boxed">
         <div class="media-body">
-          <p>Lorem ipsum dolor sit amet. Sit voluptatem consequatur ea laudantium itaque aut galisum dolorem eum atque harum aut rerum accusamus et omnis voluptatibus qui amet neque. Vel tenetur voluptatum hic officiis excepturi id suscipit quam sit voluptatibus voluptates. Qui tenetur omnis nam sint exercitationem quo porro aliquam ut similique illo.
-            Sit nulla amet aut culpa porro qui architecto consequatur sit molestias vitae ut neque asperiores et minima voluptates At quidem sequi. In illo alias et suscipit veniam ut sint quia et quae deserunt. Sit voluptatem doloribus et tenetur illo qui minima minima. Ea officiis eaque sit porro aperiam eum unde maxime qui possimus minus non quod architecto cum culpa dolores.
+          <p>
+            This radial chart shows the income rates of Latinos by each county that we track. This data
+            is updated _______________________________________, and is sourced from our API ____________________________
+            Click on the green drop down-button to choose the county you would like to examine. See the key
+            for details about what the colors on the chart mean. Note that the vertical labels on the chart are in
+            terms of percentages, 0.1 being 10% and 1 being 100%. Please note these numbers are estimates.
           </p>
         </div>
         {/* The visualization below shows the income rates of Latinos broken down by each county in Eastern Washington that we track. */}

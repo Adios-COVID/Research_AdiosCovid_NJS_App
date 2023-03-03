@@ -45,9 +45,8 @@ export default function About(props) {
                     <section class="space">
                         <h1 class="aboutTitle">Who we are</h1>
                         <p class="aboutText">
-                            We are a group of 14 undergraduate students from the <a href="https://ischool.uw.edu/" target="_blank" rel="noopener noreferrer" class="text-dark">University of Washington Information School </a>
-                            coming from all different backgrounds and concentrations. Led by Frank Martinez and Dr. Leo Morales, in partnership with the UW
-                            <a href="https://latinocenterforhealth.org/" target="_blank" rel="noopener noreferrer" class="text-dark"> Latino Center for Health </a> and Adios COVID, we have been brought in to
+                            We are a group of 14 undergraduate students from the <a href="https://ischool.uw.edu/" target="_blank" rel="noopener noreferrer" class="text-dark"> University of Washington Information School </a>
+                            coming from all different backgrounds and concentrations. Led by Frank Martinez and Dr. Leo Morales, in partnership with the UW <a href="https://latinocenterforhealth.org/" target="_blank" rel="noopener noreferrer" class="text-dark">Latino Center for Health </a> and Adios COVID, we have been brought in to
                             research Long COVID—a little-known problem affecting communities across the world. Being from a Washington-based University, it was decided that we would uncover how Long COVID
                             is affecting the population in our great state, in particular, Latinos in Eastern Washington. Throughout our 10-week quarter,
                             we have developed this website and created an open-source research system, collecting data from both field and pre-existing
