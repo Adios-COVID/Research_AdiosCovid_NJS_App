@@ -149,28 +149,7 @@
     
 }
 
-/* Data Page*/
-.container {
-    display: block;
-    flex-direction: column;
-    align-items: center;
-}
-
-.data_media_img {
-    max-width: 50%;
-    height: auto;
-    padding-right: 0.5em;
-    padding-left: 0.5em;
-}
-
-#data_page p {
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.5vw;
-}
-
-#data_row {
-    padding: 1.5rem;
-}
+/* Submit Data Page */
 
 #section4 div,
 #section4 form,
@@ -304,6 +283,8 @@
 
 #section4 p {
     padding-top: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5vw;
 }
 
 .name-item input,
@@ -315,13 +296,41 @@
     width: 97%;
 }
 
+.latinoSelect {
+    margin: 10px;
+    color: #666;
+}
+
+/* Data Page*/
+.container {
+    display: block;
+    flex-direction: column;
+    align-items: center;
+}
+
+.data_media_img {
+    max-width: 50%;
+    height: auto;
+    padding-right: 0.5em;
+    padding-left: 0.5em;
+}
+
+#data_page p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5vw;
+}
+
+#data_row {
+    padding: 1.5rem;
+}
+
 .boxed {
     border-radius: 6px;
     background: #fff;
     box-shadow: 0 0 10px 0 #bf0817;
     text-align: center;
     padding: 20px;
-    margin-top: 30px;
+    margin: 35px;
 }
 
 

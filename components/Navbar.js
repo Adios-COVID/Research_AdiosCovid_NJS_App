@@ -34,7 +34,7 @@ const Navbar = () => {
           </li>
         </ul>
         <button type="button" id="access_data" class="btn btn-danger btn-md me-3"><Link href="/RepoPage" id="access_data_toggle">Access Our Data</Link></button>
-        <button type="button" id="access_data" class="btn btn-info btn-md me-3"><Link href="/Data" id="access_data_toggle">Submit Your Data</Link></button>
+        <button type="button" id="access_data" class="btn btn-info btn-md me-3"><Link href="/SubmitData" id="access_data_toggle">Submit Your Data</Link></button>
       </div>
     </nav>
     

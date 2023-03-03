@@ -40,7 +40,7 @@ export default function Home() {
             <div class="col-md">
               <h3 class="home_sub_heading"> Who are our participants?</h3>
               <p class="home_p"> The Latino spirit is mighty, proud, warm, and driven. Although our participants have found themselves experiencing a significant amount of hardship, there is little that can be done to prevent the Latino spirit from persevering. However, things could be made easier for them. During our interviews, we heard that our participants have a hard time accessing medical care and basic health services. Those that are experiencing Long COVID are often forced to return to work prematurely to make ends meet and take care of their families. This reality could be improved upon, and we hope to inspire a part of that change.</p>
-              <button type="button" id="tell_story" class="btn btn-info btn-md me-3"><a href="/Data#section4" id="access_data_toggle">Tell Your Story</a></button>            
+              <button type="button" id="tell_story" class="btn btn-info btn-md me-3"><a href="/SubmitData" id="access_data_toggle">Tell Your Story</a></button>            
             </div>
           </div>
           <div class="row">
