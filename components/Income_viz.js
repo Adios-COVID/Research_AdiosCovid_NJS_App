@@ -1,24 +1,33 @@
 import React, { useState, useEffect } from 'react';
 import { Chart as ChartJS, ArcElement, RadialLinearScale, Tooltip, Legend } from 'chart.js';
 import Dropdown from 'react-bootstrap/Dropdown';
+//import ChartDataLabels from 'chartjs-plugin-datalabels';
 import { PolarArea } from 'react-chartjs-2';
 
 ChartJS.register(ArcElement, RadialLinearScale, Tooltip, Legend);
-export const options = {
+const incomeOptions = {
     plugins: {
       title: {
         display: true,
         text: 'Income Rates of Latinos by County',
-      },
+      }
     },
     responsive: true,
 }
-
+/*
+datalabels: {
+  color: 'black',
+  anchor: 'end',
+  align: 'center',
+  font: {
+    weight: 'bold',
+  },
+}*/
 function IncomeVisualization() {
     const [data, setData] = useState([]);
     // Add state for handling errors
     const [errorMessage, setErrorMessage] = useState('');
-  
+    const [selectedItem, setSelectedItem] = useState(null);
     useEffect(() => {
       async function fetchData() {
         try {
@@ -35,41 +44,17 @@ function IncomeVisualization() {
     for (let i = 0; i < data.length; i++) {
         countyData.push(data[i].County);
     }
-    console.log(countyData);
-    /*
-    const countyData = {"county":[], "Income_less_10000":[], "Income_10000_to_14999":[], "Income_15000_to_19999":[], "Income_20000_to_24999":[], "Income_25000_to_29999":[],
-                      "Income_30000_to_34999":[], "Income_35000_to_39999":[], "Income_40000_to_44999":[], "Income_45000_to_49999":[], "Income_50000_to_54999":[],
-                  "Income_55000_to_59999": [], "Income_60000_to_74999":[], "Income_75000_to_99999":[], "Income_100000_to_124999":[], "Income_125000_to_149999":[],
-              "Income_150000_to_199999":[], "Income_200000_or_more":[]};
-    for (let i = 0; i < data.length; i++) {
-      countyData["county"].push(data[i].County);
-      countyData["Income_less_10000"].push(data[i].Income_less_10000);
-      countyData["Income_10000_to_14999"].push(data[i].Income_10000_to_14999);
-      countyData["Income_15000_to_19999"].push(data[i].Income_15000_to_19999);
-      countyData["Income_20000_to_24999"].push(data[i].Income_20000_to_24999);
-      countyData["Income_25000_to_29999"].push(data[i].Income_25000_to_29999);
-      countyData["Income_30000_to_34999"].push(data[i].Income_30000_to_34999);
-      countyData["Income_35000_to_39999"].push(data[i].Income_35000_to_39999);
-      countyData["Income_40000_to_44999"].push(data[i].Income_40000_to_44999);
-      countyData["Income_45000_to_49999"].push(data[i].Income_45000_to_49999);
-      countyData["Income_50000_to_54999"].push(data[i].Income_50000_to_54999);
-      countyData["Income_55000_to_59999"].push(data[i].Income_55000_to_59999);
-      countyData["Income_60000_to_74999"].push(data[i].Income_60000_to_74999);
-      countyData["Income_75000_to_99999"].push(data[i].Income_75000_to_99999);
-      countyData["Income_100000_to_124999"].push(data[i].Income_100000_to_124999);
-      countyData["Income_125000_to_149999"].push(data[i].Income_125000_to_149999);
-      countyData["Income_150000_to_199999"].push(data[i].Income_150000_to_199999);
-      countyData["Income_200000_or_more"].push(data[i].Income_200000_or_more);
-    }*/
-    // Conditionally render an error message if an error occurs
     if (errorMessage) {
       return <div>{errorMessage}</div>;
     }
-    //{county:data[Object.keys("County")[0]], Income_less_10000:data[Object.keys("Income_less_10000")[0]], Income_10000_to_14999:data[Object.keys("Income_10000_to_14999")[0]]}
+    const listOfCounty = {
+      
+    }
     const [initialData, setInitialData] = useState({});
   const handleGraph = (event) => {
+      setSelectedItem(event);
       data.forEach(each=>{
-          if(each.County === event.currentTarget.id){
+          if(each.County === event){
               setInitialData({County: each.County, Income_less_10000:each.Income_less_10000, Income_10000_to_14999:each.Income_10000_to_14999, 
                 Income_15000_to_19999:each.Income_15000_to_19999, Income_20000_to_24999:each.Income_20000_to_24999, Income_25000_to_29999:each.Income_25000_to_29999,
                 Income_30000_to_34999:each.Income_30000_to_34999, Income_35000_to_39999:each.Income_35000_to_39999, Income_40000_to_44999:each.Income_40000_to_44999,
@@ -137,41 +122,23 @@ function IncomeVisualization() {
     ],
   };
   return (
-    
     <div class="incomeViz">
-        <h1>Income Visualization</h1>
+        <h2>Visualization of Latino Incomes by County</h2>
         <p>Start seeing the visualization by selecting the county you would like to observe!</p>
-        <Dropdown>
-            <Dropdown.Toggle variant="success" id="dropdown-basic">
-                County
-            </Dropdown.Toggle>
-            <Dropdown.Menu>
-                <Dropdown.Item id="Adams" onClick={handleGraph}>Adams</Dropdown.Item>
-                <Dropdown.Item id="Asotin" onClick={handleGraph}>Asotin</Dropdown.Item>
-                <Dropdown.Item id="Benton" onClick={handleGraph}>Benton</Dropdown.Item>
-                <Dropdown.Item id="Chelan" onClick={handleGraph}>Chelan</Dropdown.Item>
-                <Dropdown.Item id="Columbia" onClick={handleGraph}>Columbia</Dropdown.Item>
-                <Dropdown.Item id="Douglas" onClick={handleGraph}>Douglas</Dropdown.Item>
-                <Dropdown.Item id="Ferry" onClick={handleGraph}>Ferry</Dropdown.Item>
-                <Dropdown.Item id="Franklin" onClick={handleGraph}>Franklin</Dropdown.Item>
-                <Dropdown.Item id="Garfield" onClick={handleGraph}>Garfield</Dropdown.Item>
-                <Dropdown.Item id="Grant" onClick={handleGraph}>Grant</Dropdown.Item>
-                <Dropdown.Item id="Kittitas" onClick={handleGraph}>Kittitas</Dropdown.Item>
-                <Dropdown.Item id="Klickitat" onClick={handleGraph}>Klickitat</Dropdown.Item>
-                <Dropdown.Item id="Lincoln" onClick={handleGraph}>Lincoln</Dropdown.Item>
-                <Dropdown.Item id="Okanogan" onClick={handleGraph}>Okanogan</Dropdown.Item>
-                <Dropdown.Item id="Pend Oreille" onClick={handleGraph}>Pend Oreille</Dropdown.Item>
-                <Dropdown.Item id="Spokane" onClick={handleGraph}>Spokane</Dropdown.Item>
-                <Dropdown.Item id="Stevens" onClick={handleGraph}>Stevens</Dropdown.Item>
-                <Dropdown.Item id="Walla Walla" onClick={handleGraph}>Walla Walla</Dropdown.Item>
-                <Dropdown.Item id="Washington" onClick={handleGraph}>Washington</Dropdown.Item>
-                <Dropdown.Item id="Whitman" onClick={handleGraph}>Whitman</Dropdown.Item>
-                <Dropdown.Item id="Yakima" onClick={handleGraph}>Yakima</Dropdown.Item>
-            </Dropdown.Menu>
+        <Dropdown onSelect={handleGraph}>
+          <Dropdown.Toggle variant="success" id="dropdown-basic">
+            {selectedItem}
+          </Dropdown.Toggle>
+          <Dropdown.Menu>
+            {countyData.map(item => (
+              <Dropdown.Item eventKey={item} key={item}>
+                {item}
+              </Dropdown.Item>
+            ))}
+          </Dropdown.Menu>
         </Dropdown>
-        <PolarArea data={income_viz} options={options}/>
+      <PolarArea data={income_viz} options={incomeOptions}/>
     </div>
   );
 }
-/* */
 export default IncomeVisualization;
