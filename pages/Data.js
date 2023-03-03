@@ -1,4 +1,6 @@
 import React from 'react';
+import Map from '@/components/Map'
+
 import {
   Chart as ChartJS,
   CategoryScale,
@@ -166,6 +168,18 @@ class Page extends React.Component {
         </div>
         {/* The visualization below shows the income rates of Latinos broken down by each county in Eastern Washington that we track. */}
         <IncomeVisualization />
+      </div>
+
+      <div class="boxed">
+        <div class="media-body">
+          <p>
+            This interactive map intends to show the impact of COVID and Long Covid on Washington communities. This map
+            will show a heat map of COVID data and other relevent points such as healthcare access points, race and ethnic population,
+            and more. Currently a work in progress
+          </p>
+        </div>
+        {/* Map below with various thesis proving information */}
+        <Map/>
       </div>
 
       <div class="row" id="section4">
