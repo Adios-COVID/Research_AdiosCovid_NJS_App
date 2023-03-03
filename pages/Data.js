@@ -140,7 +140,7 @@ class Page extends React.Component {
       
         <div class="boxed">
           <div class="media-body">
-            <p>Lorem ipsum dolor sit amet. Sit voluptatem consequatur ea laudantium itaque aut galisum dolorem eum atque harum aut rerum accusamus et omnis voluptatibus qui amet neque. Vel tenetur voluptatum hic officiis excepturi id suscipit quam sit voluptatibus voluptates. Qui tenetur omnis nam sint exercitationem quo porro aliquam ut similique illo.
+            <p class="home_p">Lorem ipsum dolor sit amet. Sit voluptatem consequatur ea laudantium itaque aut galisum dolorem eum atque harum aut rerum accusamus et omnis voluptatibus qui amet neque. Vel tenetur voluptatum hic officiis excepturi id suscipit quam sit voluptatibus voluptates. Qui tenetur omnis nam sint exercitationem quo porro aliquam ut similique illo.
               Sit nulla amet aut culpa porro qui architecto consequatur sit molestias vitae ut neque asperiores et minima voluptates At quidem sequi. In illo alias et suscipit veniam ut sint quia et quae deserunt. Sit voluptatem doloribus et tenetur illo qui minima minima. Ea officiis eaque sit porro aperiam eum unde maxime qui possimus minus non quod architecto cum culpa dolores.
             </p>
           </div>
