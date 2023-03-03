@@ -1,6 +1,4 @@
 import React from 'react';
-import Map from '../components/Map.js'
-
 import {
   Chart as ChartJS,
   CategoryScale,
@@ -21,6 +19,7 @@ import Image from 'next/image'
 import dataimg1 from '../public/data_img_1.png'
 import dataimg2 from '../public/data_img_2.png'
 import IncomeVisualization from '../components/Income_viz.js'
+import Map from '@/components/Map.js'
 import { Black_And_White_Picture } from '@next/font/google';
 
 ChartJS.register(
