@@ -1,106 +1,15 @@
 import React from 'react';
-import {
-  Chart as ChartJS,
-  CategoryScale,
-  LinearScale,
-  BarElement,
-  Title,
-  Tooltip,
-  Legend,
-} from 'chart.js';
-import { Bar } from 'react-chartjs-2';
-import {
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem,
-  UncontrolledDropdown,
-} from "reactstrap";
 import Image from 'next/image'
 import dataimg1 from '../public/data_img_1.png'
 import dataimg2 from '../public/data_img_2.png'
 import IncomeVisualization from '../components/Income_viz.js'
+import PopulationBarChart from '../components/population_bar_vis'
 import MapPage from './Map.js'
 import { Black_And_White_Picture } from '@next/font/google';
 
-ChartJS.register(
-  CategoryScale,
-  LinearScale,
-  BarElement,
-  Title,
-  Tooltip,
-  Legend
-);
 
-
-export const options = {
-  plugins: {
-    title: {
-      display: true,
-      text: 'Latino Population vs. Total Population in Eastern Washington',
-      padding: {
-        top: 10,
-        bottom: 10
-      },
-      font: {
-        size: "35rem",
-        family: 'Roboto',
-        weight: 'normal'
-      },
-      color: "black"
-    },
-  },
-  labels: {
-    color: "black"
-  },
-  responsive: true,
-  interaction: {
-    mode: 'index',
-    intersect: false,
-  },
-  scales: {
-    x: {
-      stacked: true,
-    },
-    y: {
-      stacked: true,
-    },
-  },
-};
-class Page extends React.Component {
-  static async getInitialProps(ctx) {
-    var county = [];
-    var totalPopulation = [];
-    var latinoPopulation = [];
-    const res = await fetch('https://rprwae53w2.execute-api.us-west-2.amazonaws.com/v-1/latino-populations')
-    const json = await res.json()
-    for (let i = 0; i < json.data.length; i++) {
-      county[i] = json.data[i].County;
-      totalPopulation[i] = json.data[i].Pop_Estimate;
-      latinoPopulation[i] = json.data[i].Estimated_Latino_Pop;
-    }
-    const pop = {
-      labels: county,
-      datasets: [
-        {
-          label: 'Total Population',
-          data: totalPopulation,
-          backgroundColor: 'rgb(237, 231, 45)',
-
-          stack: 'Stack 0',
-        },
-        {
-          label: 'Latino Population',
-          data: latinoPopulation,
-          backgroundColor: 'rgb(245, 122, 122)',
-          stack: 'Stack 0',
-        }
-      ],
-    };
-    return { data: pop }
-  }
-
-  render() {
-    return <div class="container" id="data_page">
+export default function DataPage() {
+  return (<div class="container" id="data_page">
       <div class="row" id="data_row">
         <div class="media" id="data_media">
           <Image
@@ -138,21 +47,21 @@ class Page extends React.Component {
           />
         </div>
       </div>
-      
+
         <div class="boxed">
           <div class="media-body">
             <p>
               This bar chart breaks down the estimated Latino population for the counties
-              that we track in Eastern Washington. This data is updated ____________________________, 
+              that we track in Eastern Washington. This data is updated ____________________________,
               and is sourced from our API ______________________________
               The yellow portion of the chart represents the non-Latino population and
               the red portion represents the Latino population in the given county. Hover over any of the
-              bars to toggle a tooltip, and click on the "Total Population" / "Latino Population" portions of the 
+              bars to toggle a tooltip, and click on the "Total Population" / "Latino Population" portions of the
               key to filter the data to your liking. Please note these numbers are estimates.
             </p>
           </div>
           {/* The visualization below shows how many Latinos there are in each of the Eastern Washington counties that we track. */}
-          <Bar class='barchart' options={options} data={this.props.data} />
+          <PopulationBarChart />
         </div>
 
       <div class="boxed">
@@ -180,8 +89,5 @@ class Page extends React.Component {
         {/* Map below with various thesis proving information */}
         <MapPage />
       </div>
-    </div>
-  }
+    </div>);
 }
-
-export default Page
