@@ -2,10 +2,20 @@ import logopic from '../public/Logo_AdiosCOVID.png'
 import Link from "next/link";
 import Image from "next/image";
 import React, { useState } from "react";
+import { useRouter } from "next/router";
+import useTranslation from "next-translate/useTranslation";
 
-const Navbar = () => {
+
+export default function Navbar(){
+  const { t } = useTranslation("common");
+  const router = useRouter()
+
+  const { locale, locales } = router
+  const changeLanguage = (e) => {
+    const locale = e.target.value
+    router.push(router.asPath, router.asPath, { locale })
+  }
   return (
-    
     <div>
     <nav class="navbar navbar-expand-lg navbar-light bg-white justify-content-between navbar-custom">
       <Link href="/" className="navbar-brand text-center col-2">
@@ -21,20 +31,30 @@ const Navbar = () => {
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item">
-            <Link href="/" className="nav-link"> Home </Link>
+            <Link href="/" className="nav-link" class={"Home"}> {t("Home")} </Link>
           </li>
           <li class="nav-item">
-            <Link href="/Data" className="nav-link">Data </Link>
+            <Link href="/Data" className="nav-link" class={"Data"}>{t("Data")} </Link>
           </li>
           <li class="nav-item">
-            <Link href="/about" className="nav-link">About </Link>
-          </li>
-          <li class="nav-item">
-            <Link href="/news" className="nav-link">News </Link>
+            <Link href="/about" className="nav-link" class={"About"}>{t("About")} </Link>
           </li>
         </ul>
-        <button type="button" id="access_data" class="btn btn-danger btn-md me-3"><Link href="/RepoPage" id="access_data_toggle">Access Our Data</Link></button>
-        <button type="button" id="access_data" class="btn btn-info btn-md me-3"><Link href="/SubmitData" id="access_data_toggle">Submit Your Data</Link></button>
+        <select 
+            onChange={changeLanguage}
+            defaultValue={locale}
+            id="switch" 
+            class="btn btn-light btn-md me-3"
+            style={{ textAlignLast: 'center' }}
+            >
+              {locales.map((e) => (
+                    <option value={e} key={e}>
+                      {e}
+                    </option>
+              ))}
+          </select>
+        <button type="button" id="access_data" class="btn btn-danger btn-md me-3"><Link href="/RepoPage" id="access_data_toggle">{t("Access-Btn")}</Link></button>
+        <button type="button" id="access_data" class="btn btn-info btn-md me-3"><Link href="/Data" id="access_data_toggle">{t("Submit-Btn")}</Link></button>
       </div>
     </nav>
     
@@ -42,8 +62,6 @@ const Navbar = () => {
 
   );
 };
-
-export default Navbar;
 
 /*
 <NavDropdown title="Data" id="basic-nav-dropdown" className="navbarDropdown">
