@@ -122,7 +122,7 @@ function IncomeVisualization() {
     ],
   };
   return (
-    <div class="incomeViz">
+    <div>
         <h2>Visualization of Latino Incomes by County</h2>
         <p>Start seeing the visualization by selecting the county you would like to observe!</p>
         <Dropdown onSelect={handleGraph}>
@@ -137,7 +137,7 @@ function IncomeVisualization() {
             ))}
           </Dropdown.Menu>
         </Dropdown>
-      <PolarArea data={income_viz} options={incomeOptions}/>
+      <PolarArea data={income_viz} options={incomeOptions} className="incomeViz"/>
     </div>
   );
 }
