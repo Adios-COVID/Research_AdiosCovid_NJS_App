@@ -74,7 +74,7 @@ export default function RepoPage() {
                 <button type="button"
                     class="col-6 mx-auto btn btn-danger btn-rounded btn-md btn-block"
                     id="btn1">
-                    <a href="https://github.com/Adios-COVID/research_adioscovid_app.git" target="_blank" rel="noopener noreferrer"
+                    <a href="https://github.com/Adios-COVID" target="_blank" rel="noopener noreferrer"
                         class="text-light">
                         {t("Repo-Link-Btn")}
                     </a>
