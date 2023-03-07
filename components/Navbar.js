@@ -31,13 +31,13 @@ export default function Navbar(){
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item">
-            <Link href="/" className="nav-link" class={"Home"}> {t("Home")} </Link>
+            <Link href="/" className="nav-link"> {t("Home")} </Link>
           </li>
           <li class="nav-item">
-            <Link href="/Data" className="nav-link" class={"Data"}>{t("Data")} </Link>
+            <Link href="/Data" className="nav-link">{t("Data")} </Link>
           </li>
           <li class="nav-item">
-            <Link href="/about" className="nav-link" class={"About"}>{t("About")} </Link>
+            <Link href="/about" className="nav-link">{t("About")} </Link>
           </li>
         </ul>
         <select 
