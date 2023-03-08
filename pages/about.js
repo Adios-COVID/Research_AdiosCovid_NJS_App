@@ -74,7 +74,7 @@ export default function About(props) {
                             <Image
                                 src={lat_img}
                                 alt="Latino-pic"
-                                className="logo"
+                                className="logo img-fluid"
                                 priority
                             />
                             <b> {t("OrgName2")}</b>

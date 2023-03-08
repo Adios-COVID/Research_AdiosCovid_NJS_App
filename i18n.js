@@ -5,8 +5,9 @@ module.exports = {
     '/': ["common"], // Namespaces that you want to import per page (we stick to one namespace for all the application in this tutorial)
     '/Data': ["common"],
     '/about': ["common"],
-    '/RepoPage':["common"]
-    // '/Test': ['common']
+    '/RepoPage':["common"],
+    '/SubmitData':["common"],
+    '/documentation':['common']
   },
 };
 

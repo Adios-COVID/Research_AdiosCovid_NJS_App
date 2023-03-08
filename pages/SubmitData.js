@@ -1,9 +1,11 @@
 import React from 'react';
+import useTranslation from "next-translate/useTranslation";
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 
 
 export default function SubmitData() {
+    const { t } = useTranslation("common");
     return (
         <>
             <Navbar />
@@ -11,13 +13,13 @@ export default function SubmitData() {
                 <div class="testbox">
                     <form action="/">
                         <div class="banner">
-                            <h1 id="form-title">Submit Your Data</h1>
+                            <h1 id="form-title">{t("form-title")}</h1>
                         </div>
-                        <p>Share your own experience with long covid to help us!</p>
-                        <p>Please fill out this form. Your submission of data will help us a lot with our research!</p>
+                        <p>{t("form-content1")}</p>
+                        <p>{t("form-content2")}</p>
                         <hr />
                         <fieldset>
-                            <legend>Your Information</legend>
+                            <legend>{t("form-legend")}</legend>
                             <div class="item">
                                 <div class="name-item">
                                     <div>
@@ -26,20 +28,20 @@ export default function SubmitData() {
                                 </div>
                             </div>
                             <div class="item">
-                                <label for="description">Are you Hispanic/Latino?<span>*</span></label>
+                                <label for="description">{t("form-description0")}<span>*</span></label>
                                 <select class="latinoSelect">
-                                    <option>Select your answer</option>
-                                    <option>Yes</option>
-                                    <option>No</option>
+                                    <option>{t("form-choice")}</option>
+                                    <option>{t("form-choice-yes")}</option>
+                                    <option>{t("form-choice-no")}</option>
                                 </select>
                             </div>
                             <div class="item">
-                                <label for="description">What is Your Experience with Long COVID?<span>*</span></label>
+                                <label for="description">{t("form-description1")}<span>*</span></label>
                                 <input id="description" type="text" name="text" required />
                             </div>
                         </fieldset>
                         <div class="btn-block">
-                            <button id="submit_button" type="submit" href="/">SUBMIT</button>
+                            <button id="submit_button" type="submit" href="/">{t("SUBMIT")}</button>
                         </div>
                     </form>
                 </div>
