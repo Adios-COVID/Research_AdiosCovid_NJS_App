@@ -39,6 +39,9 @@ export default function Navbar(){
           <li class="nav-item">
             <Link href="/about" className="nav-link">{t("About")} </Link>
           </li>
+          <li class="nav-item">
+            <Link href="/documentation" className="nav-link">{t("Documentation")} </Link>
+          </li>
         </ul>
         <select 
             onChange={changeLanguage}
