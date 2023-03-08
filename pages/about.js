@@ -18,6 +18,7 @@ export default function About(props) {
                     <section class="aboutText">
                         <h1 class="aboutTitle">{t("aboutTitle0")}</h1>
                         <p class="aboutText">
+                        {/* {t("aboutText0Test")}  */}
                             {/* It goes without saying that COVID-19 has impacted the lives of many across the world, but something that is seldom discussed is what happens to the body after
                             COVID subsides. Symptoms lingering after an individual has recovered from COVID is what is known as Long COVID <a href="https://www.seattletimes.com/seattle-news/health/long-covid-grips-some-washingtonians-and-perplexes-scientists-new-research-underway/" target="_blank" rel="noopener noreferrer"> <sup>[1]</sup></a>.
                             These symptoms can range from brain fog to depression or anxiety and have an unknown duration as of right now. Even scarier, Long COVID has been noted as a cause of death on certain individuals’ death
@@ -28,7 +29,13 @@ export default function About(props) {
                             of Long COVID are also felt across the world. The total economic cost of Long COVID in the U.S. is estimated to sum to about $3.7 trillion <a href="https://www.cnbc.com/2022/11/30/why-long-covid-could-be-the-next-public-health-disaster.html" target="_blank" rel="noopener noreferrer"> <sup>[4]</sup></a>,
                             including reduced quality of life, reduced earnings, and increased medical expenses. In the United States, millions are out of work due to the effect of Long COVID, and this
                             spread is distributed rather unequally between races/ethnicities, thus heavily impacting the economy. */}
-                            {t("aboutText0Test")} 
+                            {t("aboutText0")} <a href="https://www.seattletimes.com/seattle-news/health/long-covid-grips-some-washingtonians-and-perplexes-scientists-new-research-underway/" target="_blank" rel="noopener noreferrer"> <sup>[1]</sup></a>.
+                            {t("aboutText0_1")} <a href="https://yourlocalepidemiologist.substack.com/p/long-covid-an-update-and-gauging" target="_blank" rel="noopener noreferrer"> <sup>[2]</sup></a> 
+                            {t("aboutText0_2")} <a href="https://yourlocalepidemiologist.substack.com/p/long-covid-an-update-and-gauging" target="_blank" rel="noopener noreferrer"> <sup>[2]</sup></a>
+                            {t("aboutText0_3")} <a href="https://pubmed.ncbi.nlm.nih.gov/33791733/" target="_blank" rel="noopener noreferrer"> <sup>[3]</sup></a>, 
+                            {t("aboutText0_4")} <a href="https://www.cnbc.com/2022/11/30/why-long-covid-could-be-the-next-public-health-disaster.html" target="_blank" rel="noopener noreferrer"> <sup>[4]</sup></a>,
+                            {t( "aboutText0_5")}
+                            
                         </p>
                     </section>
 
