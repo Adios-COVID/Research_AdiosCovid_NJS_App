@@ -52,13 +52,7 @@ export default function DataPage() {
             <div class="boxed">
               <div class="pop">
                 <p>
-                  This bar chart breaks down the estimated Latino population for the counties
-                  that we track in Eastern Washington. This data is updated ____________________________,
-                  and is sourced from our API ______________________________
-                  The yellow portion of the chart represents the non-Latino population and
-                  the red portion represents the Latino population in the given county. Hover over any of the
-                  bars to toggle a tooltip, and click on the "Total Population" / "Latino Population" portions of the
-                  key to filter the data to your liking. Please note these numbers are estimates.
+                {t("Data-Viz1")}
                 </p>
               {/* The visualization below shows how many Latinos there are in each of the Eastern Washington counties that we track. */}
               <PopulationBarChart />
@@ -68,11 +62,7 @@ export default function DataPage() {
           <div class="boxed">
             <div class="income">
               <p>
-                This radial chart shows the income rates of Latinos by each county that we track. This data
-                is updated _______________________________________, and is sourced from our API ____________________________
-                Click on the green drop down-button to choose the county you would like to examine. See the key
-                for details about what the colors on the chart mean. Note that the vertical labels on the chart are in
-                terms of percentages, 0.1 being 10% and 1 being 100%. Please note these numbers are estimates.
+              {t("Data-Viz2")}
               </p>
             {/* The visualization below shows the income rates of Latinos broken down by each county in Eastern Washington that we track. */}
             <IncomeVisualization />
@@ -81,9 +71,7 @@ export default function DataPage() {
 
           <div class="boxed">
               <p>
-                This interactive map intends to show the impact of COVID and Long Covid on Washington communities. This map
-                will show a heat map of COVID data and other relevent points such as healthcare access points, race and ethnic population,
-                and more. Currently a work in progress
+              {t("Data-Viz3")}
               </p>
             {/* Map below with various thesis proving information */}
             <MapPage />
