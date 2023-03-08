@@ -1,6 +1,7 @@
 import logopic from '../public/Logo_AdiosCOVID.png'
 import Link from "next/link";
 import Image from "next/image";
+<<<<<<< HEAD
 import React, { useEffect, useState } from 'react';
 // import { useRouter } from "next/navigation";
 import { useRouter } from "next/router";
@@ -26,14 +27,30 @@ export default function Navbar(){
     router.push(router.asPath, router.asPath, { locale })
   }
 
+=======
+import React, { useState } from "react";
+import { useRouter } from "next/router";
+import useTranslation from "next-translate/useTranslation";
+
+
+export default function Navbar(){
+  const { t } = useTranslation("common");
+  const router = useRouter()
+
+  const { locale, locales } = router
+  const changeLanguage = (e) => {
+    const locale = e.target.value
+    router.push(router.asPath, router.asPath, { locale })
+  }
+>>>>>>> origin/main
   return (
     <div>
     <nav class="navbar navbar-expand-lg navbar-light bg-white justify-content-between navbar-custom">
-      <Link href="/" className="navbar-brand col-2">
+      <Link href="/" className="navbar-brand text-center col-2">
       <Image
                 src={logopic} 
                 alt="Adios COVID Research Logo"
-                className="img-fluid img_logo"
+                className="img_fluid img_logo"
         />
       </Link>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -42,6 +59,7 @@ export default function Navbar(){
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item">
+<<<<<<< HEAD
             <Link href="/" className="nav-link" class={"Home"}> {t("Home")} </Link>
           </li>
           <li class="nav-item">
@@ -53,6 +71,15 @@ export default function Navbar(){
 <<<<<<< HEAD
           <li class="nav-item">
             <Link href="/documentation" className="nav-link"> Documentation </Link>
+=======
+            <Link href="/" className="nav-link"> {t("Home")} </Link>
+          </li>
+          <li class="nav-item">
+            <Link href="/Data" className="nav-link">{t("Data")} </Link>
+          </li>
+          <li class="nav-item">
+            <Link href="/about" className="nav-link">{t("About")} </Link>
+>>>>>>> origin/main
           </li>
 =======
           {/* <li class="nav-item">
@@ -60,6 +87,7 @@ export default function Navbar(){
           </li> */}
 >>>>>>> 50c18e1a31d7b175914552f02859e058fad482f1
         </ul>
+<<<<<<< HEAD
         {/* <Link href="/" locale="en">
             <h2>English</h2>
         </Link>  
@@ -81,6 +109,8 @@ export default function Navbar(){
             <option value="es">es</option>
         </select> */}
 
+=======
+>>>>>>> origin/main
         <select 
             onChange={changeLanguage}
             defaultValue={locale}
@@ -93,6 +123,7 @@ export default function Navbar(){
                       {e}
                     </option>
               ))}
+<<<<<<< HEAD
       </select>
 
         {/* <Link href="/" locale="en">
@@ -104,6 +135,11 @@ export default function Navbar(){
 
         <button type="button" id="access_data" class="btn btn-danger btn-md me-3"><Link href="/RepoPage" id="access_data_toggle">{t("Access-Btn")}</Link></button>
         <button type="button" id="access_data" class="btn btn-info btn-md me-3"><Link href="/Data" id="access_data_toggle">{t("Submit-Btn")}</Link></button>
+=======
+          </select>
+        <button type="button" id="access_data" class="btn btn-danger btn-md me-3"><Link href="/RepoPage" id="access_data_toggle">{t("Access-Btn")}</Link></button>
+        <button type="button" id="access_data" class="btn btn-info btn-md me-3"><Link href="/SubmitData" id="access_data_toggle">{t("Submit-Btn")}</Link></button>
+>>>>>>> origin/main
       </div>
     </nav>
     
@@ -112,4 +148,16 @@ export default function Navbar(){
   );
 };
 
+<<<<<<< HEAD
 // export default Navbar;
+=======
+/*
+<NavDropdown title="Data" id="basic-nav-dropdown" className="navbarDropdown">
+              <NavDropdown.Item href="/DataPage/#section1">Action</NavDropdown.Item>
+              <NavDropdown.Item href="/DataPage/#section3">
+                Another action
+              </NavDropdown.Item>
+              <NavDropdown.Item href="/DataPage/#section4">Something</NavDropdown.Item>
+              <NavDropdown.Divider />
+            </NavDropdown>*/
+>>>>>>> origin/main

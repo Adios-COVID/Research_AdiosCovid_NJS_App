@@ -25,11 +25,14 @@
       "static/chunks/main.js",
       "static/chunks/pages/Data.js"
     ],
+<<<<<<< HEAD
     "/RepoPage": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
       "static/chunks/pages/RepoPage.js"
     ],
+=======
+>>>>>>> origin/main
     "/_app": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",

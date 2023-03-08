@@ -3,7 +3,11 @@
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
 <<<<<<< HEAD
+<<<<<<< HEAD
   "/documentation": "pages/documentation.js",
+=======
+  "/Data": "pages/Data.js",
+>>>>>>> origin/main
   "/": "pages/index.js"
 =======
   "/RepoPage": "pages/RepoPage.js",

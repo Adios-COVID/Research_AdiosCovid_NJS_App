@@ -1,1 +1,5 @@
 .DS_Store
+.next/static/
+.next/trace/
+.next/server/
+.next/cache/

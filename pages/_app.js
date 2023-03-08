@@ -1,6 +1,7 @@
 import '../styles/globals.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Head from 'next/head';
+<<<<<<< HEAD
 // import { useRouter } from "next/router";
 // import { useEffect } from 'react';
 // import * as gtag from '../lib/gtag'
@@ -16,6 +17,15 @@ export default function App({ Component, pageProps }) {
   //     router.events.off('routeChangeComplete', handleRouteChange)
   //   }
   // }, [router.events])
+=======
+import { useEffect } from "react";
+
+
+export default function App({ Component, pageProps }) {
+  useEffect(() => {
+    require("bootstrap/dist/js/bootstrap.bundle.min.js");
+  }, []);
+>>>>>>> origin/main
   return (
     <>
     <Head>
