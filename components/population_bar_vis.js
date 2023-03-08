@@ -41,9 +41,10 @@ const options = {
     color: "black"
   },
   responsive: true,
+  maintainAspectRatio: false,
   interaction: {
     mode: 'index',
-    intersect: false,
+    intersect: true,
   },
   scales: {
     x: {
@@ -101,7 +102,7 @@ function  PopulationBarChart() {
       ],
     };
 
-    return(<div class='barchart'>
+    return(<div class='pop_viz'>
             <Bar options={options} data={pop} />
           </div>
     );

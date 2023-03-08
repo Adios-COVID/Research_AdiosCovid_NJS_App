@@ -10,9 +10,19 @@ const incomeOptions = {
       title: {
         display: true,
         text: 'Income Rates of Latinos by County',
+      },
+      legend: {
+        display: false
+      }
+    },
+    layout: {
+      padding: {
+        top: 0,
+        bottom: 30
       }
     },
     responsive: true,
+    maintainAspectRatio: false,
 }
 /*
 datalabels: {
@@ -122,11 +132,11 @@ function IncomeVisualization() {
     ],
   };
   return (
-    <div>
+    <div class="incomeViz">
         <h2>Visualization of Latino Incomes by County</h2>
         <p>Start seeing the visualization by selecting the county you would like to observe!</p>
         <Dropdown onSelect={handleGraph}>
-          <Dropdown.Toggle variant="success" id="dropdown-basic">
+          <Dropdown.Toggle variant="primary" id="dropdown-basic">
             {selectedItem}
           </Dropdown.Toggle>
           <Dropdown.Menu>
@@ -137,7 +147,7 @@ function IncomeVisualization() {
             ))}
           </Dropdown.Menu>
         </Dropdown>
-      <PolarArea data={income_viz} options={incomeOptions} className="incomeViz"/>
+      <PolarArea data={income_viz} options={incomeOptions}/>
     </div>
   );
 }

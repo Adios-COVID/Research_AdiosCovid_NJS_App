@@ -149,6 +149,11 @@
     
 }
 
+@media (max-width: 1000px) {
+    #home_banner .row {
+        padding: 2rem;
+    }
+}
 /* Submit Data Page */
 
 #section4 div,
@@ -311,7 +316,7 @@
 }
 
 .data_media_img {
-    max-width: 50%;
+    max-width: 100%;
     height: auto;
     padding-right: 0.5em;
     padding-left: 0.5em;
@@ -319,11 +324,12 @@
 
 #data_page p {
     font-family: 'Roboto', sans-serif;
-    font-size: 1.5vw;
+    font-size: 20px;
 }
 
 #data_row {
     padding: 1.5rem;
+    margin-bottom: 1em;
 }
 
 .boxed {
@@ -332,19 +338,55 @@
     box-shadow: 0 0 10px 0 #bf0817;
     text-align: center;
     padding: 20px;
-    margin: 35px;
+    margin: 10px;
 }
 
+.pop {
+    height: 1300px;  
+}
+
+.pop_viz {
+    width: 1000px;
+    height: 1000px;
+    margin: auto;  
+}
+
+.income {
+    height: 1300px;  
+}
 
 .incomeViz {
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 1em;
-    min-width: 1000px;
-    min-height: 1000px;
+    width: 1000px;
+    height: 1000px;
+    margin: auto;  
 }
 
+.dropdown-menu {
+    height: 300px;
+    overflow-y: scroll;
+}
+@media (max-width: 1000px) {
+    .income {
+        height: 700px;  
+    }
+    .incomeViz {
+        width: 300px;
+        height: 400px;
+    }
+    .pop {
+        height: 700px;  
+    }
+    
+    .pop_viz {
+        width: 300px;
+        height: 400px;
+        margin: auto;  
+    }
+    #data_page p {
+        font-family: 'Roboto', sans-serif;
+        font-size: 12px;
+    }
+}
 /* Header Page*/
 .navbar-custom {
     font-family: 'Roboto', sans-serif;
