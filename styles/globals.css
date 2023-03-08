@@ -483,3 +483,14 @@
 .terms li {
     margin-bottom: 0.5em;
 }
+
+/* Documentation Page */
+.doc_image {
+    width: 300px;
+    height: 300px;
+    margin-left: 20%;
+}
+
+#documentation_row {
+    margin: 5%;
+}

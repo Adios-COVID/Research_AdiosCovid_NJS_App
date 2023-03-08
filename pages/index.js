@@ -19,17 +19,17 @@ export default function Home() {
         <div class="container">
           <div class="row">
             <div class="col-md">
-                <h1 class={"home-heading"}>{t("home-heading")}</h1>
-                <h3 class={"home_sub_heading1"}>{t("home_sub_heading1")}</h3>
-                <p class={"home_p1"}>{t("home_p1")}</p>
-            </div>
-            <div class="col-md">
               <Image
                 src={homepic}
                 alt="Homepage Logo"
                 className="home_img"
                 priority
               />
+            </div>
+            <div class="col-md">
+                <h1 class={"home-heading"}>{t("home-heading")}</h1>
+                <h3 class={"home_sub_heading1"}>{t("home_sub_heading1")}</h3>
+                <p class={"home_p1"}>{t("home_p1")}</p>
             </div>
           </div>
           <div class="row">
