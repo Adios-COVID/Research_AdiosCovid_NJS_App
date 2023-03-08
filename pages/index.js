@@ -44,7 +44,7 @@ export default function Home() {
             <div class="col-md">
                 <h3 class={"home_sub_heading2"}> {t("home_sub_heading2")}</h3>
                 <p class={"home_p2"}> {t("home_p2")}</p>
-              <button type="button" id="tell_story" class="btn btn-info btn-md me-3"><a href="/SubmitData" id="access_data_toggle">Tell Your Story</a></button>            
+              <button type="button" id="tell_story" class="btn btn-info btn-md me-3"><a href="/SubmitData" id="access_data_toggle">{t("Tell Your Story")}</a></button>            
             </div>
           </div>
           <div class="row">

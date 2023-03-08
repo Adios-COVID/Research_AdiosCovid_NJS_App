@@ -40,9 +40,6 @@ export default function MapPage() {
 
   return (
     <div>
-      <Head>
-        <title>react-map-gl example</title>
-      </Head>
 
       <Map
       
