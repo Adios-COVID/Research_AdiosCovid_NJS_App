@@ -54,7 +54,7 @@ export default function Navbar(){
               ))}
           </select>
         <button type="button" id="access_data" class="btn btn-danger btn-md me-3"><Link href="/RepoPage" id="access_data_toggle">{t("Access-Btn")}</Link></button>
-        <button type="button" id="access_data" class="btn btn-info btn-md me-3"><Link href="/Data" id="access_data_toggle">{t("Submit-Btn")}</Link></button>
+        <button type="button" id="access_data" class="btn btn-info btn-md me-3"><Link href="/SubmitData" id="access_data_toggle">{t("Submit-Btn")}</Link></button>
       </div>
     </nav>
     
