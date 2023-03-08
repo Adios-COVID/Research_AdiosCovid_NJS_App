@@ -3,42 +3,54 @@ import Image from 'next/image'
 import uwimg from '../public/UW.png'
 import lat_img from '../public/Latino_Center_for_Health.png'
 import avatar from '../public/Apple_Avatar.png'
+import useTranslation from "next-translate/useTranslation"
+import { useRouter } from "next/router";
+import Navbar from '@/components/Navbar'
+import Footer from '@/components/Footer'
 
 export default function About(props) {
     const personData = props.personData;
+    const { t } = useTranslation("common");
+
+    const {locale,locales, push} = useRouter()
+    const router = useRouter()
+  
+    const changeLanguage = (e) => {
+        const locale = e.target.value
+        router.push(router.asPath, router.asPath, { locale })
+    }
+    
     return (
+        <>
+        <Navbar />
         <div class="margindesign">
         <main class="body">
             <div class="aboutText">
                 <section class="aboutText">
-                    <h1 class="aboutTitle">Our Thesis</h1>
-                    <p class="aboutText">
-                    The lack of access to quality medical and health services, coupled with inadequate information and education about Long Covid 
-                    has resulted in a public health crisis disproportionately affecting Latino communities in Eastern Washington, particularly those 
-                    from low-income and rural backgrounds. This crisis is further exacerbated by a shortage of medical infrastructure, mistrust of the government, 
-                    and limited financial assistance for medical treatments. To address this issue, there needs to be a comprehensive government intervention and 
-                    policy reform that addresses these underlying issues and provides resources for training in the assessment and treatment of Long COVID and increasing 
-                    the number of Spanish-speaking providers in Eastern Washington. To meet the needs of communities impacted by Long Covid, community-based organizations
-                     need to be empowered with education about the illness and research-driven plans for assistance. 
+                    <h1 class={"aboutTitle1"}>{t("aboutTitle1")}</h1>
+                    <p class={"aboutText1"}>
+                        {t("aboutText1")}
                     </p>
                 </section>
                 
-                
                 <section class="space">
-                    <h1 class="aboutTitle">Who we are</h1>
-                    <p  class="aboutText">
-                    We are a group of 14 undergraduate students from the <a href = "https://ischool.uw.edu/" target="_blank" rel="noopener noreferrer">University of Washington Information School </a> 
+                    <h1 class={"aboutTitle2"}>{t("aboutTitle2")}</h1>
+                    <p class={"aboutText2"}>
+                    {/* We are a group of 14 undergraduate students from the  
+                    <a href = "https://ischool.uw.edu/" target="_blank" rel="noopener noreferrer">University of Washington Information School </a> 
                     coming from all different backgrounds and concentrations. Led by Frank Martinez and Dr. Leo Morales, in partnership with the UW 
-                    <a href = "https://latinocenterforhealth.org/" target="_blank" rel="noopener noreferrer"> Latino Center for Health </a> and Adios COVID, we have been brought in to 
+                    <a href = "https://latinocenterforhealth.org/" target="_blank" rel="noopener noreferrer"> Latino Center for Health </a> 
+                    and Adios COVID, we have been brought in to 
                     research Long COVID—a little-known problem affecting communities across the world. Being from a Washington-based University, it was decided that we would uncover how Long COVID 
                     is affecting the population in our great state, in particular, Latinos in Eastern Washington. Throughout our 10-week quarter,
                     we have developed this website and created an open-source research system, collecting data from both field and pre-existing
-                    research. To learn more about everyone involved, scroll down.
+                    research. To learn more about everyone involved, scroll down. */}
+                    {t("aboutText2")}
                     </p>
                 </section>
 
                 <section class="aboutText">
-                    <h1 class="Title">Organizations Involved:</h1>
+                    <h1 class={"aboutTitle3"}>{t("aboutTitle3")}</h1>
                     <p class="OrgName">
                         <Image
                             src={uwimg}
@@ -46,33 +58,35 @@ export default function About(props) {
                             className="logo img-fluid"
                             priority
                         />
-                        <b> University of Washington</b>
+                        <b class={"OrgName1"}> {t("OrgName1")}</b>
                     </p>
                     <p className="OrgName">
                         <Image
                             src={lat_img}
                             alt="Latino-pic"
-                            className="logo"
+                            className="logo img-fluid"
                             priority
                         />
-                        <b> UW Latino Center for Health</b>
+                        <b class={"OrgName2"}> {t("OrgName2")}</b>
                     </p>
-                    <p class="aboutText">
-                        Huge thanks to everyone from these organizations who helped us along the way! 
+                    <p class={"aboutText4"}>
+                        {t("aboutText4")}
                     </p>
-                    <h1 class="Title">Our Team</h1>
+                    <h1 class={"aboutTitle4"}>{t("aboutTitle4")}</h1>
                     <div>
                         <Image
                             src={avatar}
                             alt="Apple_Avatar-pic"
-                            className="people_avatar"
+                            className="people_avatar img-fluid"
                             priority
-                        />  
+                        />
                     </div>
                 </section>
             </div>
         </main >
     </div >
+    <Footer /> 
+    </>
     );
 }
 
