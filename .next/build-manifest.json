@@ -15,15 +15,10 @@
   ],
   "rootMainFiles": [],
   "pages": {
-    "/": [
+    "/SubmitData": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/index.js"
-    ],
-    "/Data": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/Data.js"
+      "static/chunks/pages/SubmitData.js"
     ],
     "/_app": [
       "static/chunks/webpack.js",
