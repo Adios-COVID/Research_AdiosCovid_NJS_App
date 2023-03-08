@@ -28,7 +28,13 @@ export default function About(props) {
                             of Long COVID are also felt across the world. The total economic cost of Long COVID in the U.S. is estimated to sum to about $3.7 trillion <a href="https://www.cnbc.com/2022/11/30/why-long-covid-could-be-the-next-public-health-disaster.html" target="_blank" rel="noopener noreferrer"> <sup>[4]</sup></a>,
                             including reduced quality of life, reduced earnings, and increased medical expenses. In the United States, millions are out of work due to the effect of Long COVID, and this
                             spread is distributed rather unequally between races/ethnicities, thus heavily impacting the economy. */}
-                            {t("aboutText0Test")} 
+                            {/* {t("aboutText0Test")}  */}
+                            {t("aboutText0")} <a href="https://www.seattletimes.com/seattle-news/health/long-covid-grips-some-washingtonians-and-perplexes-scientists-new-research-underway/" target="_blank" rel="noopener noreferrer"> <sup>[1]</sup></a>.
+                            {t("aboutText0_1")} <a href="https://yourlocalepidemiologist.substack.com/p/long-covid-an-update-and-gauging" target="_blank" rel="noopener noreferrer"> <sup>[2]</sup></a> 
+                            {t("aboutText0_2")} <a href="https://yourlocalepidemiologist.substack.com/p/long-covid-an-update-and-gauging" target="_blank" rel="noopener noreferrer"> <sup>[2]</sup></a>
+                            {t("aboutText0_3")} <a href="https://pubmed.ncbi.nlm.nih.gov/33791733/" target="_blank" rel="noopener noreferrer"> <sup>[3]</sup></a>, 
+                            {t("aboutText0_4")} <a href="https://www.cnbc.com/2022/11/30/why-long-covid-could-be-the-next-public-health-disaster.html" target="_blank" rel="noopener noreferrer"> <sup>[4]</sup></a>,
+                            {t( "aboutText0_5")}
                         </p>
                     </section>
 
