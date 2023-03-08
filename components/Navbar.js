@@ -29,6 +29,9 @@ const Navbar = () => {
           <li class="nav-item">
             <Link href="/about" className="nav-link">About </Link>
           </li>
+          <li class="nav-item">
+            <Link href="/documentation" className="nav-link"> Documentation </Link>
+          </li>
         </ul>
         <button type="button" id="access_data" class="btn btn-danger btn-md me-3"><Link href="/RepoPage" id="access_data_toggle">Access Our Data</Link></button>
         <button type="button" id="access_data" class="btn btn-info btn-md me-3"><Link href="/Data" id="access_data_toggle">Submit Your Data</Link></button>
