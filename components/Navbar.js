@@ -1,7 +1,7 @@
 import logopic from '../public/Logo_AdiosCOVID.png'
 import Link from "next/link";
 import Image from "next/image";
-import React, { useState } from "react";
+import React from "react";
 import { useRouter } from "next/router";
 import useTranslation from "next-translate/useTranslation";
 
@@ -11,10 +11,12 @@ export default function Navbar(){
   const router = useRouter()
 
   const { locale, locales } = router
+
   const changeLanguage = (e) => {
     const locale = e.target.value
     router.push(router.asPath, router.asPath, { locale })
   }
+
   return (
     <div>
     <nav class="navbar navbar-expand-lg navbar-light bg-white justify-content-between navbar-custom">
@@ -25,11 +27,11 @@ export default function Navbar(){
                 className="img_fluid img_logo"
         />
       </Link>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+      <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span className="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
+      <div className="navbar-collapse collapse" id="navbarSupportedContent">
+        <ul className="navbar-nav mr-auto">
           <li class="nav-item">
             <Link href="/" className="nav-link"> {t("Home")} </Link>
           </li>
