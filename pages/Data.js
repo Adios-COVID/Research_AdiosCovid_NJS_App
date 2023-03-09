@@ -7,16 +7,15 @@ import PopulationBarChart from '../components/population_bar_vis'
 import MapPage from './Map.js'
 import { Black_And_White_Picture } from '@next/font/google';
 import useTranslation from "next-translate/useTranslation";
-import Navbar from '@/components/Navbar'
-import Footer from '@/components/Footer'
-
+//import Navbar from '@/components/Navbar'
+//import Footer from '@/components/Footer'
+import Layout from '../components/Layout'
 
 export default function DataPage() {
   const { t } = useTranslation("common");
   return (
     <>
-    <Navbar />
-   
+    <Layout>
       <div class="container" id="data_page">
           <div class="row" id="data_row">
             <div id="data_media">
@@ -77,7 +76,7 @@ export default function DataPage() {
             <MapPage />
           </div>
         </div>
-        <Footer/>
+        </Layout>
        </>
       );
 }
