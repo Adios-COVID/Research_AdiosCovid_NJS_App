@@ -538,3 +538,17 @@
 #documentation_row {
     margin: 5%;
 }
+
+#docu_toggle {
+    text-decoration: none;
+    color: white;
+}
+
+.docu_link {
+    height: auto;
+}
+
+#documentation_dropdown {
+    padding-bottom: 4em;
+    text-align:center;
+}

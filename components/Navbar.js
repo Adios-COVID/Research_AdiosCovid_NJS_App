@@ -62,7 +62,6 @@ export default function Navbar(){
     </nav>
     
   </div>
-
   );
 };
 
@@ -74,4 +73,5 @@ export default function Navbar(){
               </NavDropdown.Item>
               <NavDropdown.Item href="/DataPage/#section4">Something</NavDropdown.Item>
               <NavDropdown.Divider />
-            </NavDropdown>*/
+            </NavDropdown>      
+            */
