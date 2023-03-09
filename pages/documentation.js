@@ -13,7 +13,7 @@ export default function DocumentationPage() {
             <Navbar />
             <div class="container">
                 <div class="row align-items-center" id='documentation_row'>
-                    <div class="col-md-4">
+                    <div class="col-md-8">
                         <h1> {t("Documentation")} </h1>
                         <p> 
                             {t("Documentation-Content")}
