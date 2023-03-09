@@ -12,11 +12,20 @@
     color: black;
 }
 
-.aboutText {
-    font-size: 20px;
-    color: black;
-    line-height: 1.5;
+.aboutTitle {
     text-align: center;
+    padding: 0.5em;
+    color: black;
+}
+
+.aboutText {
+    text-align: center;
+    padding: 0.2rem;
+    margin-bottom: 0.5em;
+    outline: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    line-height: 1.5;
 }
 
 .OrgName {
@@ -51,6 +60,21 @@
         padding-left: 5em;
         padding-right: 5em;
     }
+    .aboutTitle {
+        text-align: center;
+        padding: 0.5em;
+        color: black;
+    }
+    
+    .aboutText {
+        text-align: center;
+        padding: 0.5rem;
+        margin-bottom: 1em;
+        outline: none;
+        font-family: 'Roboto', sans-serif;
+        font-size: 14px;
+        line-height: 1.5;
+    }
 }
 
 @media (min-width: 890px) {
@@ -68,6 +92,21 @@
         margin-left: auto;
         margin-right: auto;
         width: 10%;
+    }
+    .aboutTitle {
+        text-align: center;
+        padding: 0.5em;
+        color: black;
+    }
+    
+    .aboutText {
+        text-align: center;
+        padding: 1.5rem;
+        margin-bottom: 1em;
+        outline: none;
+        font-family: 'Roboto', sans-serif;
+        font-size: 20px;
+        line-height: 1.5;
     }
 
 }
@@ -423,6 +462,11 @@
     margin: 10px;
     text-decoration: none;
     color: white;
+}
+
+#switch {
+    margin-left: 30px;
+    margin-bottom: 10px;
 }
 
 /* News Page */
