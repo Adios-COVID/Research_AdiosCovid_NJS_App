@@ -20,14 +20,6 @@
       "static/chunks/main.js",
       "static/chunks/pages/index.js"
     ],
-<<<<<<< HEAD
-=======
-    "/Data": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/Data.js"
-    ],
->>>>>>> origin/main
     "/_app": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
@@ -37,14 +29,6 @@
       "static/chunks/webpack.js",
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
-<<<<<<< HEAD
-    ],
-    "/documentation": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/documentation.js"
-=======
->>>>>>> origin/main
     ]
   },
   "ampFirstPages": []
