@@ -66,14 +66,3 @@ export default function Navbar(){
   </div>
   );
 };
-
-/*
-<NavDropdown title="Data" id="basic-nav-dropdown" className="navbarDropdown">
-              <NavDropdown.Item href="/DataPage/#section1">Action</NavDropdown.Item>
-              <NavDropdown.Item href="/DataPage/#section3">
-                Another action
-              </NavDropdown.Item>
-              <NavDropdown.Item href="/DataPage/#section4">Something</NavDropdown.Item>
-              <NavDropdown.Divider />
-            </NavDropdown>      
-            */
