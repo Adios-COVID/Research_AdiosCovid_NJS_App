@@ -34,6 +34,11 @@ export default function Home() {
           </div>
           <div class="row">
             <div class="col-md">
+                <h3 class={"home_sub_heading2"}> {t("home_sub_heading2")}</h3>
+                <p class={"home_p2"}> {t("home_p2")}</p>
+              <button type="button" id="tell_story" class="btn btn-info btn-md me-3"><a href="/SubmitData" id="access_data_toggle">{t("Tell Your Story")}</a></button>            
+            </div>
+            <div class="col-md">
               <Image
                 src={persona}
                 alt="Cartoon portrayal of latin family. Grandma is working on embroidery. Daughter is reading. Mother is adjusting grandmother's chair. Son is bringing in groceries."
@@ -41,17 +46,8 @@ export default function Home() {
                 priority
               />
             </div>
-            <div class="col-md">
-                <h3 class={"home_sub_heading2"}> {t("home_sub_heading2")}</h3>
-                <p class={"home_p2"}> {t("home_p2")}</p>
-              <button type="button" id="tell_story" class="btn btn-info btn-md me-3"><a href="/SubmitData" id="access_data_toggle">{t("Tell Your Story")}</a></button>            
-            </div>
           </div>
           <div class="row">
-            <div class="col-md">
-                <h3 class={"home_sub_heading3"}> {t("home_sub_heading3")}</h3>
-                <p class={"home_p3"}> {t("home_p3")}</p>
-            </div>
             <div class="col-md">
               <Image
                 src={location}
@@ -59,6 +55,10 @@ export default function Home() {
                 className="home_img"
                 priority
               />
+            </div>
+            <div class="col-md">
+                <h3 class={"home_sub_heading3"}> {t("home_sub_heading3")}</h3>
+                <p class={"home_p3"}> {t("home_p3")}</p>
             </div>
           </div>
         </div>
