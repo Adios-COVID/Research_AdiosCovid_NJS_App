@@ -69,7 +69,7 @@ export default function DataPage() {
             <div class="income">
               <p>
               {t("Data-Viz3")}{" "}
-              <Link href="https://rprwae53w2.execute-api.us-west-2.amazonaws.com/v-1/latino-income" target="_blank" rel="noopener noreferrer"> API </Link>{" "}
+              <Link href="https://rprwae53w2.execute-api.us-west-2.amazonaws.com/v-1/latino-income" target="_blank" rel="noopener noreferrer"> API. </Link>{" "}
               {t("Data-Viz3-0")}
               </p>
               <p>
