@@ -8,6 +8,7 @@ import MapPage from './Map.js'
 import useTranslation from "next-translate/useTranslation";
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import Link from 'next/link'
 
 export default function DataPage() {
   const { t } = useTranslation("common");
@@ -49,7 +50,9 @@ export default function DataPage() {
             <div class="boxed">
               <div class="pop">
                 <p>
-                {t("Data-Viz1")}
+                {t("Data-Viz1")}{" "}
+                <Link href="https://rprwae53w2.execute-api.us-west-2.amazonaws.com/v-1/latino-populations" target="_blank" rel="noopener noreferrer"> API. </Link>{" "}
+                {t("Data-Viz1-2")}
                 </p>
               {/* The visualization below shows how many Latinos there are in each of the Eastern Washington counties that we track. */}
               <PopulationBarChart />
@@ -59,7 +62,9 @@ export default function DataPage() {
           <div class="boxed">
             <div class="income">
               <p>
-              {t("Data-Viz2")}
+              {t("Data-Viz2")}{" "}
+              <Link href="https://rprwae53w2.execute-api.us-west-2.amazonaws.com/v-1/latino-income\" target="_blank" rel="noopener noreferrer"> API </Link>{" "}
+              {t("Data-Viz2-0")}
               </p>
               <p>
                 {t("Data-Viz2-1")}
