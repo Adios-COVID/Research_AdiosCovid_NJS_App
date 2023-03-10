@@ -18,10 +18,6 @@ export default function DocumentationPage() {
                         <p> 
                             {t("Documentation-Content")}
                         </p>
-                        <h1> {t("Documentation-Disclaimer")} </h1>
-                        <p> 
-                            {t("Documentation-Disclaimer-Content")}
-                        </p>
                     </div>
                     <div class="col-md-4">
                         <Image src={Doc_Image} alt="Cartoon of woman and the download symbol" class="doc_image"/>
@@ -30,7 +26,7 @@ export default function DocumentationPage() {
                 <div class="row" id='documentation_dropdown'>
                     <Dropdown>
                         <Dropdown.Toggle variant="danger" className="btn-rounded btn-md">
-                            {t("Select Documentation")}
+                            Select Documentation
                         </Dropdown.Toggle>
                         <Dropdown.Menu className="docu_link">            
                             <Dropdown.Item href="Data_Documentation_Long_COVID_Research.pdf">{t("Research Documentation")}</Dropdown.Item>
