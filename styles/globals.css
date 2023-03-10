@@ -400,6 +400,20 @@
     margin: auto;  
 }
 
+.vis-container {
+    align-items: center;
+    justify-content: center;
+    min-width: 0
+}
+
+.genderViz {
+    height: 500px;
+}
+
+.ageViz {
+    height: 500px;
+}
+
 .dropdown-menu {
     height: 300px;
     overflow-y: scroll;
@@ -415,7 +429,6 @@
     .pop {
         height: 900px;  
     }
-    
     .pop_viz {
         width: 300px;
         height: 500px;
