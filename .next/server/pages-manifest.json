@@ -2,6 +2,7 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/Data": "pages/Data.js",
-  "/about": "pages/about.js"
+  "/RepoPage": "pages/RepoPage.js",
+  "/documentation": "pages/documentation.js",
+  "/SubmitData": "pages/SubmitData.js"
 }
