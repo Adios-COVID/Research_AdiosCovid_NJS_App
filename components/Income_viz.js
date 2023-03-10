@@ -3,6 +3,7 @@ import { Chart as ChartJS, ArcElement, RadialLinearScale, Tooltip, Legend } from
 import Dropdown from 'react-bootstrap/Dropdown';
 //import ChartDataLabels from 'chartjs-plugin-datalabels';
 import { PolarArea } from 'react-chartjs-2';
+import useTranslation from "next-translate/useTranslation";
 
 ChartJS.register(ArcElement, RadialLinearScale, Tooltip, Legend);
 const incomeOptions = {
@@ -34,6 +35,7 @@ datalabels: {
   },
 }*/
 function IncomeVisualization() {
+    const { t } = useTranslation("common");
     const [data, setData] = useState([]);
     // Add state for handling errors
     const [errorMessage, setErrorMessage] = useState('');
@@ -133,8 +135,8 @@ function IncomeVisualization() {
   };
   return (
     <div class="incomeViz">
-        <h2>Visualization of Latino Incomes by County</h2>
-        <p>Start seeing the visualization by selecting the county you would like to observe!</p>
+        <h2>{t("Data-Viz2-Title")}</h2>
+        <p>{t("Data-Viz2-Content")}</p>
         <Dropdown onSelect={handleGraph}>
           <Dropdown.Toggle variant="primary" id="dropdown-basic">
             {selectedItem}
