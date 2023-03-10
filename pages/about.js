@@ -97,6 +97,7 @@ export default function About(props) {
                             <p><a href="https://irisd-1.web.app/" target="_blank" rel="noopener noreferrer" class="text-dark">Yunyi Ding</a></p>
                             <p><a href="https://www.linkedin.com/in/jacqueline-cy-hsu" target="_blank" rel="noopener noreferrer" class="text-dark">Jacqueline Hsu </a></p>
                             <p><a href="https://www.linkedin.com/in/avirajsingh25" target="_blank" rel="noopener noreferrer" class="text-dark">Aviraj Singh</a></p>
+                            <p><a href="https://www.linkedin.com/in/zhuoyan-liu-70a5151bb/" target="_blank" rel="noopener noreferrer" class="text-dark">Zhuoyan(Louise) Liu</a></p>
                         </div>
 
                     </section>
