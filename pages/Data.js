@@ -51,7 +51,7 @@ export default function DataPage() {
 
           <div class="boxed">
               <p>
-              {t("Data-Viz3")}
+              {t("Data-Viz1")}
               </p>
             {/* Map below with various thesis proving information */}
             <MapPage />
@@ -60,12 +60,12 @@ export default function DataPage() {
             <div class="boxed">
               <div class="pop">
                 <p>
-                {t("Data-Viz1")}{" "}
+                {t("Data-Viz2")}{" "}
                 <Link href="https://rprwae53w2.execute-api.us-west-2.amazonaws.com/v-1/latino-populations" target="_blank" rel="noopener noreferrer"> API. </Link>{" "}
-                {t("Data-Viz1-0")}
+                {t("Data-Viz2-0")}
                 </p>
                 <p>
-                {t("Data-Viz1-1")}
+                {t("Data-Viz2-1")}
                 </p>
               {/* The visualization below shows how many Latinos there are in each of the Eastern Washington counties that we track. */}
               <PopulationBarChart />
@@ -75,12 +75,12 @@ export default function DataPage() {
           <div class="boxed">
             <div class="income">
               <p>
-              {t("Data-Viz2")}{" "}
+              {t("Data-Viz3")}{" "}
               <Link href="https://rprwae53w2.execute-api.us-west-2.amazonaws.com/v-1/latino-income" target="_blank" rel="noopener noreferrer"> API </Link>{" "}
-              {t("Data-Viz2-0")}
+              {t("Data-Viz3-0")}
               </p>
               <p>
-                {t("Data-Viz2-1")}
+                {t("Data-Viz3-1")}
               </p>
             {/* The visualization below shows the income rates of Latinos broken down by each county in Eastern Washington that we track. */}
             <IncomeVisualization />
@@ -88,8 +88,15 @@ export default function DataPage() {
           </div>
 
           <div class="boxed">
-            <p>This bar chart breaks down the estimated Latino Hospitalized population and Non Hospitalized population for the different age and gender group that we track in Eastern Washington. This data is updated in 03/10/23 and is sourced from our API. The yellow portion of the chart represents the hospitalized population and the red portion represents the non-hospitalized population in the given group. Hover over any of the bars to toggle a tooltip, and click on the 'Hospitalized' / 'Non Hospitalized' portions of the key to filter the data to your liking. Please note these numbers are estimates.</p>
-            <p>It is notable that the 18-49 age group had a higher likelihood of hospitalization than other age groups. Additionally, females were more likely to be hospitalized than males. These visualizations suggest that working-age groups are more vulnerable to hospitalization, which may result in an increased economic burden. Also, they support our thesis statement that Latino communities encounter a shortage of medical resources, irrespective of age or gender.</p>
+              <p>
+              {t("Data-Viz4")}{" "}
+              <Link href="https://rprwae53w2.execute-api.us-west-2.amazonaws.com/v-1/age-group-estimate" target="_blank" rel="noopener noreferrer"> Age API,</Link>{" "}
+              <Link href="https://rprwae53w2.execute-api.us-west-2.amazonaws.com/v-1/gender-group-estimate" target="_blank" rel="noopener noreferrer"> Gender II.</Link>{" "}
+              {t("Data-Viz4-0")}
+              </p>
+              <p>
+                {t("Data-Viz4-1")}
+              </p>
             <div class="vis-container">
               <div class="age">
               {/* The visualization below shows the Hospitalized status broken down by age group in Eastern Washington that we track. */}
