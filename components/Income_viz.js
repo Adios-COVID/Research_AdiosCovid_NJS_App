@@ -24,12 +24,12 @@ const incomeOptions = {
     responsive: true,
     maintainAspectRatio: false,
 }
-
+/* */
 function IncomeVisualization() {
     const [data, setData] = useState([]);
     // Add state for handling errors
     const [errorMessage, setErrorMessage] = useState('');
-    const [selectedItem, setSelectedItem] = useState(null);
+    const [selectedItem, setSelectedItem] = useState("Adams");
     useEffect(() => {
       async function fetchData() {
         try {
@@ -52,7 +52,7 @@ function IncomeVisualization() {
     const listOfCounty = {
       
     }
-    const [initialData, setInitialData] = useState({});
+    const [initialData, setInitialData] = useState({County: "Adams", Income_less_10000: 166, Income_10000_to_14999: 256, Income_15000_to_19999: 228, Income_20000_to_24999: 247, Income_25000_to_29999: 137, Income_30000_to_34999: 70, Income_35000_to_39999: 171, Income_40000_to_44999: 277, Income_45000_to_49999: 68, Income_50000_to_54999: 206, Income_55000_to_59999: 401, Income_60000_to_74999: 455, Income_75000_to_99999: 455, Income_100000_to_124999: 108, Income_125000_to_149999: 83, Income_150000_to_199999: 42, Income_200000_or_more: 43});
   const handleGraph = (event) => {
       setSelectedItem(event);
       data.forEach(each=>{
