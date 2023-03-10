@@ -83,14 +83,20 @@ export default function About(props) {
                             {t("aboutText4")}
                         </p>
                         <h1 class="Title">{t("aboutTitle4")}</h1>
-                        <div>
-                            <Image
-                                src={avatar}
-                                alt="Apple_Avatar-pic"
-                                className="people_avatar img-fluid"
-                                priority
-                            />
-
+                        <div class="Names">
+                            <p><a href="https://www.frankmartinez.xyz/" target="_blank" rel="noopener noreferrer" class="text-dark">Frank Martinez </a></p>
+                            <p><a href="https://www.linkedin.com/in/valeria-fraga-495420248/" target="_blank" rel="noopener noreferrer" class="text-dark">Valeria Fraga </a></p>
+                            <p><a href="mailto:erickim912@gmail.com" class="text-dark">Eric Kim </a></p>
+                            <p><a href="https://www.linkedin.com/in/jeremy-dondoyano" target="_blank" rel="noopener noreferrer" class="text-dark">Jeremy Dondoyano </a></p>
+                            <p><a href="mailto:xxb@uw.edu" class="text-dark">Xiaobing Xu </a></p>
+                            <p><a href="https://github.com/raina" target="_blank" rel="noopener noreferrer" class="text-dark">Raina Scherer </a></p>
+                            <p>Eunji Ahn </p>
+                            <p><a href="https://www.linkedin.com/in/jyun1998/" target="_blank" rel="noopener noreferrer" class="text-dark">Jangwon Yun </a></p>
+                            <p><a href="https://www.linkedin.com/in/kaarina-tulleau/" target="_blank" rel="noopener noreferrer" class="text-dark">Kaarina Tulleau </a></p>
+                            <p><a href="https://www.linkedin.com/in/yash-katwal/" target="_blank" rel="noopener noreferrer" class="text-dark">Yash Katwal </a></p>
+                            <p><a href="https://irisd-1.web.app/" target="_blank" rel="noopener noreferrer" class="text-dark">Yunyi Ding</a></p>
+                            <p><a href="https://www.linkedin.com/in/jacqueline-cy-hsu" target="_blank" rel="noopener noreferrer" class="text-dark">Jacqueline Hsu </a></p>
+                            <p><a href="https://www.linkedin.com/in/avirajsingh25" target="_blank" rel="noopener noreferrer" class="text-dark">Avi </a></p>
                         </div>
 
                     </section>
