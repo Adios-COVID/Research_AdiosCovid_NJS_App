@@ -32,26 +32,26 @@ export default function Navbar(){
       </button>
       <div className="navbar-collapse collapse" id="navbarSupportedContent">
         <ul className="navbar-nav mr-auto">
-          <li class="nav-item">
+          <li class="nav-item" id="navbar_link">
             <Link href="/" className="nav-link"> {t("Home")} </Link>
           </li>
-          <li class="nav-item">
+          <li class="nav-item" id="navbar_link">
             <Link href="/Data" className="nav-link">{t("Data")} </Link>
           </li>
-          <li class="nav-item">
+          <li class="nav-item" id="navbar_link">
             <Link href="/about" className="nav-link">{t("About")} </Link>
           </li>
-          <li class="nav-item">
+          <li class="nav-item" id="navbar_link">
             <Link href="/documentation" className="nav-link">{t("Documentation")} </Link>
           </li>
         </ul>
         <ul className="nav navbar-nav navbar-right">
-          <li className="nav-item">
+          <li className="nav-item" id="navbar_link">
           <select 
               onChange={changeLanguage}
               defaultValue={locale}
               id="switch" 
-              class="btn btn-light btn-md me-3"
+              class="btn btn-secondary btn-md me-3"
               style={{ textAlignLast: 'center' }}
               >
                 {locales.map((e) => (

@@ -463,13 +463,13 @@
     margin-left: 20px;
 }
 
-.navbar-nav>.nav-item {
+#navbar_link {
     margin-top: 0.5em;
     margin-left: 30px;
 }
 
 #access_data {
-    margin-bottom: 10px;
+    margin-top:5px;
 }
 
 #access_data_toggle {
@@ -479,10 +479,18 @@
 }
 
 #switch {
-    margin-top:3px;
-    margin-bottom: 10px;
+    margin-bottom:0.5em;
 }
-
+@media (max-width: 1000px) {
+    #access_data {
+        margin-top:0.5em;
+        margin-bottom:0.5em;
+        margin-left: 25px;
+    }
+    #switch {
+        margin-bottom:0.5em;
+    }
+}
 /* News Page */
 .App {
     font-family: sans-serif;
