@@ -45,21 +45,25 @@ export default function Navbar(){
             <Link href="/documentation" className="nav-link">{t("Documentation")} </Link>
           </li>
         </ul>
-        <select 
-            onChange={changeLanguage}
-            defaultValue={locale}
-            id="switch" 
-            class="btn btn-light btn-md me-3"
-            style={{ textAlignLast: 'center' }}
-            >
-              {locales.map((e) => (
-                    <option value={e} key={e}>
-                      {e}
-                    </option>
-              ))}
-          </select>
-        <button type="button" id="access_data" class="btn btn-danger btn-md me-3"><Link href="/RepoPage" id="access_data_toggle">{t("Access-Btn")}</Link></button>
-        <button type="button" id="access_data" class="btn btn-info btn-md me-3"><Link href="/SubmitData" id="access_data_toggle">{t("Submit-Btn")}</Link></button>
+        <ul className="nav navbar-nav navbar-right">
+          <li className="nav-item">
+          <select 
+              onChange={changeLanguage}
+              defaultValue={locale}
+              id="switch" 
+              class="btn btn-light btn-md me-3"
+              style={{ textAlignLast: 'center' }}
+              >
+                {locales.map((e) => (
+                      <option value={e} key={e}>
+                        {e}
+                      </option>
+                ))}
+            </select>
+          </li>
+          <li className="nav-item"><button type="button" id="access_data" class="btn btn-danger btn-md me-3"><Link href="/RepoPage" id="access_data_toggle">{t("Access-Btn")}</Link></button></li>
+          <li className="nav-item"><button type="button" id="access_data" class="btn btn-info btn-md me-3"><Link href="/SubmitData" id="access_data_toggle">{t("Submit-Btn")}</Link></button></li>
+        </ul>
       </div>
     </nav>
     
