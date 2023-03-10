@@ -83,7 +83,7 @@
     "Data-Viz4-1":"It is notable that the 18-49 age group had a higher likelihood of hospitalization than other age groups. Additionally, females were more likely to be hospitalized than males. These visualizations suggest that working-age groups are more vulnerable to hospitalization, which may result in an increased economic burden. Also, they support our thesis statement that Latino communities encounter a shortage of medical resources, irrespective of age or gender.",
     "Documentation-Content":"The open source research system that we have built was created with the contribution of students in three breakout areas; research, data repository, web application. This page is meant to serve as a guide for navigating the code behind for each area. Each area has prepared a PDF to guide external visitors as they explore the infrastructure; see each area's PDF linked below.",
     "Documentation-Disclaimer":"Disclaimer",
-    "Documentation-Disclaimer-Content":"Please note due to a limited of time that documentation is only available in English and will not be translated into Spanish. We apologize for any inconvenience this may cause.",
+    "Documentation-Disclaimer-Content":"Please note due to a limited time frame that documentation is only available in English and will not be translated into Spanish. We apologize for any inconvenience this may cause.",
     "Select Documentation":"Select Documentation",
     "Research Documentation":"Research Documentation",
     "Data Pipeline Documentation":"Data Pipeline Documentation",
