@@ -61,6 +61,9 @@ export default function DataPage() {
               <p>
               {t("Data-Viz2")}
               </p>
+              <p>
+                {t("Data-Viz2-1")}
+              </p>
             {/* The visualization below shows the income rates of Latinos broken down by each county in Eastern Washington that we track. */}
             <IncomeVisualization />
             </div>
