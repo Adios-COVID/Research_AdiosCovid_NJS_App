@@ -33,7 +33,7 @@ export default function DocumentationPage() {
                             {t("Select Documentation")}
                         </Dropdown.Toggle>
                         <Dropdown.Menu className="docu_link">            
-                            <Dropdown.Item href="Data_Documentation_Long_COVID_Research.pdf">{t("Research Documentation")}</Dropdown.Item>
+                            <Dropdown.Item href="Data Documentation - Long COVID Research.pdf">{t("Research Documentation")}</Dropdown.Item>
                             <Dropdown.Divider />
                             <Dropdown.Item href="Data Pipeline Documentation.pdf">{t("Data Pipeline Documentation")}</Dropdown.Item>
                             <Dropdown.Divider />
