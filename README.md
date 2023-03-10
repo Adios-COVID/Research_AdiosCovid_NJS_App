@@ -1,4 +1,34 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# ¡Adiós COVID! 
+## _Long COVID Research Web Development Team Repository_
+
+This repository holds the code that creates the website for the Long COVID Research Web Development Team. The website is built under the structure of NextJS. 
+
+## Purpose
+The purpose of this research was to discover how Latino population from Eastern Washington State in rural areas are affected by Long COVID. 
+
+## Our Thesis
+The lack of access to quality medical and health services, coupled with inadequate information and education about Long Covid has resulted in a public health crisis disproportionately affecting Latino communities in Eastern Washington, particularly those from low-income and rural backgrounds. This crisis is further exacerbated by a shortage of medical infrastructure, mistrust of the government, and limited financial assistance for medical treatments. To address this issue, there needs to be a comprehensive government intervention and policy reform that addresses these underlying issues and provides resources for training in the assessment and treatment of Long COVID and increasing the number of Spanish-speaking providers in Eastern Washington. To meet the needs of communities impacted by Long Covid, community-based organizations need to be empowered with education about the illness and research-driven plans for assistance.
+
+## Documentation of Our Website
+Our Webpage documentation is provided below:
+- [documentation link]
+
+## Plugins
+
+Our website is currently extended with the following plugins.
+Documentation on how to use them in your own application are linked below.
+
+| Plugin | Related Documentation |
+| ------ | ------ |
+| NextJS | https://nextjs.org/docs/getting-started/ |
+| ReactJS |https://reactjs.org/docs/getting-started.html|
+| ChartJS |https://www.chartjs.org/docs/latest/|
+| MapBox | https://docs.mapbox.com/|
+| i18Next |https://www.i18next.com/|
+| AWS |https://docs.aws.amazon.com/|
+| Bootstrap | https://getbootstrap.com/docs/4.1/getting-started/introduction/ |
+| FontAwesome | https://fontawesome.com/docs |
+| Google Fonts | https://developers.google.com/fonts/docs/getting_started?hl=en|
 
 ## Getting Started
 
@@ -13,26 +43,3 @@ pnpm dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
