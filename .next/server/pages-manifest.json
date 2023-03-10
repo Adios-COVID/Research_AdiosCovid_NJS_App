@@ -1,14 +1,6 @@
 {
   "/_app": "pages/_app.js",
+  "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-<<<<<<< HEAD
   "/documentation": "pages/documentation.js"
-=======
-<<<<<<< HEAD
-  "/_error": "pages/_error.js"
-=======
-  "/about": "pages/about.js",
-  "/": "pages/index.js"
->>>>>>> ab42ac494aa403366dbb8f89c6c3a3e20a83100b
->>>>>>> origin/main
 }
