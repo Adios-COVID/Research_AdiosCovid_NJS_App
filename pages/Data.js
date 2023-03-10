@@ -6,7 +6,6 @@ import IncomeVisualization from '../components/Income_viz.js'
 import PopulationBarChart from '../components/population_bar_vis'
 import AgeBarVis from '../components/age_bar_vis'
 import GenderBarVis from '../components/gender_bar_vis'
-import MapPage from './Map.js'
 import useTranslation from "next-translate/useTranslation";
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
@@ -49,13 +48,7 @@ export default function DataPage() {
             </div>
           </div>
 
-          <div class="boxed">
-              <p>
-              {t("Data-Viz1")}
-              </p>
-            {/* Map below with various thesis proving information */}
-            <MapPage />
-          </div>
+
 
             <div class="boxed">
               <div class="pop">
