@@ -52,7 +52,10 @@ export default function DataPage() {
                 <p>
                 {t("Data-Viz1")}{" "}
                 <Link href="https://rprwae53w2.execute-api.us-west-2.amazonaws.com/v-1/latino-populations" target="_blank" rel="noopener noreferrer"> API. </Link>{" "}
-                {t("Data-Viz1-2")}
+                {t("Data-Viz1-0")}
+                </p>
+                <p>
+                {t("Data-Viz1-1")}
                 </p>
               {/* The visualization below shows how many Latinos there are in each of the Eastern Washington counties that we track. */}
               <PopulationBarChart />

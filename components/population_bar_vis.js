@@ -10,7 +10,6 @@ import {
 } from 'chart.js';
 import { Bar } from 'react-chartjs-2';
 
-
 ChartJS.register(
   CategoryScale,
   LinearScale,
@@ -24,15 +23,15 @@ const options = {
   plugins: {
     title: {
       display: true,
-      text: 'Latino Population vs. Total Population in Eastern Washington',
+      text: 'Latino vs. Total Population in Eastern Washington',
       padding: {
         top: 10,
         bottom: 10
       },
       font: {
-        size: "35rem",
+        size: 24,
         family: 'Roboto',
-        weight: 'normal'
+        weight: 'bold'
       },
       color: "black"
     },
@@ -52,8 +51,14 @@ const options = {
     },
     y: {
       stacked: true,
+      ticks: {
+        font: {
+            size: 10,
+        }
+      }
     },
   },
+  indexAxis: 'y',
 }
 
 function  PopulationBarChart() {
@@ -87,13 +92,14 @@ function  PopulationBarChart() {
       labels: county,
       datasets: [
         {
+          axis: 'y',
           label: 'Total Population',
           data: totalPopulation,
           backgroundColor: 'rgb(237, 231, 45)',
-
           stack: 'Stack 0',
         },
         {
+          axis: 'y',
           label: 'Latino Population',
           data: latinoPopulation,
           backgroundColor: 'rgb(245, 122, 122)',

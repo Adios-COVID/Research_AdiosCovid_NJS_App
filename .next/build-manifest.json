@@ -20,16 +20,6 @@
       "static/chunks/main.js",
       "static/chunks/pages/Data.js"
     ],
-    "/RepoPage": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/RepoPage.js"
-    ],
-    "/SubmitData": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/SubmitData.js"
-    ],
     "/_app": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
@@ -39,19 +29,6 @@
       "static/chunks/webpack.js",
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
-<<<<<<< HEAD
-    ],
-    "/about": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/about.js"
-    ],
-    "/documentation": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/documentation.js"
-=======
->>>>>>> 1fc8dfa672cf4ff19637ddb0608e5744303a0a3b
     ]
   },
   "ampFirstPages": []

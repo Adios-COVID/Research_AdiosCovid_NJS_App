@@ -13,26 +13,18 @@ const incomeOptions = {
       },
       legend: {
         display: false
-      }
+      },
     },
     layout: {
       padding: {
         top: 0,
         bottom: 30
-      }
+      },
     },
     responsive: true,
     maintainAspectRatio: false,
 }
-/*
-datalabels: {
-  color: 'black',
-  anchor: 'end',
-  align: 'center',
-  font: {
-    weight: 'bold',
-  },
-}*/
+
 function IncomeVisualization() {
     const [data, setData] = useState([]);
     // Add state for handling errors

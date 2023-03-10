@@ -47,12 +47,12 @@ export default function MapPage() {
           latitude: 47.3,
           longitude: -121,
           zoom: 6.5,
-          minZoom: 6,
+          minZoom: 0,
           maxZoom: 12,
           maxBounds: bounds
 
         }}
-        style={{width: '100%', height: '100vh'}}
+        style={{width: '100%', height: '80vh'}}
         mapStyle="mapbox://styles/mapbox/light-v10"
         mapboxAccessToken={MAPBOX_TOKEN}
       >

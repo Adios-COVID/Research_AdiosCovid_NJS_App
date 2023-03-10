@@ -1,5 +1,1 @@
-<<<<<<< HEAD
-self.__BUILD_MANIFEST = {__rewrites:{beforeFiles:[],afterFiles:[],fallback:[]},"/Data":["static\u002Fchunks\u002Fpages\u002FData.js"],"/_error":["static\u002Fchunks\u002Fpages\u002F_error.js"],"/about":["static\u002Fchunks\u002Fpages\u002Fabout.js"],"/documentation":["static\u002Fchunks\u002Fpages\u002Fdocumentation.js"],sortedPages:["\u002FData","\u002F_app","\u002F_error","\u002Fabout","\u002Fdocumentation"]};self.__BUILD_MANIFEST_CB && self.__BUILD_MANIFEST_CB()
-=======
-self.__BUILD_MANIFEST = {__rewrites:{beforeFiles:[],afterFiles:[],fallback:[]},"/Data":["static\u002Fchunks\u002Fpages\u002FData.js"],"/RepoPage":["static\u002Fchunks\u002Fpages\u002FRepoPage.js"],"/SubmitData":["static\u002Fchunks\u002Fpages\u002FSubmitData.js"],"/_error":["static\u002Fchunks\u002Fpages\u002F_error.js"],sortedPages:["\u002FData","\u002FRepoPage","\u002FSubmitData","\u002F_app","\u002F_error"]};self.__BUILD_MANIFEST_CB && self.__BUILD_MANIFEST_CB()
->>>>>>> 1fc8dfa672cf4ff19637ddb0608e5744303a0a3b
+self.__BUILD_MANIFEST = {__rewrites:{beforeFiles:[],afterFiles:[],fallback:[]},"/Data":["static\u002Fchunks\u002Fpages\u002FData.js"],"/_error":["static\u002Fchunks\u002Fpages\u002F_error.js"],sortedPages:["\u002FData","\u002F_app","\u002F_error"]};self.__BUILD_MANIFEST_CB && self.__BUILD_MANIFEST_CB()

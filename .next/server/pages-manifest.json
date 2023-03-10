@@ -2,12 +2,5 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/Data": "pages/Data.js",
-<<<<<<< HEAD
-  "/about": "pages/about.js",
-  "/documentation": "pages/documentation.js"
-=======
-  "/RepoPage": "pages/RepoPage.js",
-  "/SubmitData": "pages/SubmitData.js"
->>>>>>> 1fc8dfa672cf4ff19637ddb0608e5744303a0a3b
+  "/Data": "pages/Data.js"
 }

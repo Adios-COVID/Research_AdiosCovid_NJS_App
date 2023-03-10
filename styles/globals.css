@@ -381,7 +381,7 @@
 }
 
 .pop {
-    height: 1300px;  
+    height: 1500px;  
 }
 
 .pop_viz {
@@ -413,12 +413,12 @@
         height: 400px;
     }
     .pop {
-        height: 700px;  
+        height: 900px;  
     }
     
     .pop_viz {
         width: 300px;
-        height: 400px;
+        height: 500px;
         margin: auto;  
     }
     #data_page p {
