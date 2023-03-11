@@ -85,19 +85,20 @@ export default function About(props) {
                         <h1 class="Title">{t("aboutTitle4")}</h1>
                         <div class="Names">
                             <p><a href="https://www.frankmartinez.xyz/" target="_blank" rel="noopener noreferrer" class="text-dark">Frank Martinez </a></p>
-                            <p><a href="https://www.linkedin.com/in/valeria-fraga-495420248/" target="_blank" rel="noopener noreferrer" class="text-dark">Valeria Fraga </a></p>
+                            <p><a title="https://www.linkedin.com/in/valeria-fraga-495420248/" href="https://www.linkedin.com/in/valeria-fraga-495420248/" target="_blank" rel="noopener noreferrer" class="text-dark">Valeria Fraga </a></p>
                             <p><a href="mailto:erickim912@gmail.com" class="text-dark">Eric Kim </a></p>
-                            <p><a href="https://www.linkedin.com/in/jeremy-dondoyano" target="_blank" rel="noopener noreferrer" class="text-dark">Jeremy Dondoyano </a></p>
+                            <p><a title="https://www.linkedin.com/in/jeremy-dondoyano" href="https://www.linkedin.com/in/jeremy-dondoyano" target="_blank" rel="noopener noreferrer" class="text-dark">Jeremy Dondoyano </a></p>
                             <p><a href="mailto:xxb@uw.edu" class="text-dark">Xiaobing Xu </a></p>
-                            <p><a href="https://github.com/raina" target="_blank" rel="noopener noreferrer" class="text-dark">Raina Scherer </a></p>
+                            <p><a title="https://github.com/raina" href="https://github.com/raina" target="_blank" rel="noopener noreferrer" class="text-dark">Raina Scherer </a></p>
                             <p>Eunji Ahn </p>
-                            <p><a href="https://www.linkedin.com/in/jyun1998/" target="_blank" rel="noopener noreferrer" class="text-dark">Jangwon Yun </a></p>
-                            <p><a href="https://www.linkedin.com/in/kaarina-tulleau/" target="_blank" rel="noopener noreferrer" class="text-dark">Kaarina Tulleau </a></p>
-                            <p><a href="https://www.linkedin.com/in/yash-katwal/" target="_blank" rel="noopener noreferrer" class="text-dark">Yash Katwal </a></p>
-                            <p><a href="https://irisd-1.web.app/" target="_blank" rel="noopener noreferrer" class="text-dark">Yunyi Ding</a></p>
-                            <p><a href="https://www.linkedin.com/in/jacqueline-cy-hsu" target="_blank" rel="noopener noreferrer" class="text-dark">Jacqueline Hsu </a></p>
-                            <p><a href="https://www.linkedin.com/in/avirajsingh25" target="_blank" rel="noopener noreferrer" class="text-dark">Aviraj Singh</a></p>
-                            <p><a href="https://www.linkedin.com/in/zhuoyan-liu-70a5151bb/" target="_blank" rel="noopener noreferrer" class="text-dark">Zhuoyan(Louise) Liu</a></p>
+                            <p><a title="https://www.linkedin.com/in/jyun1998/" href="https://www.linkedin.com/in/jyun1998/" target="_blank" rel="noopener noreferrer" class="text-dark">Jangwon Yun </a></p>
+                            <p><a title="https://www.linkedin.com/in/kaarina-tulleau/" href="https://www.linkedin.com/in/kaarina-tulleau/" target="_blank" rel="noopener noreferrer" class="text-dark">Kaarina Tulleau </a></p>
+                            <p><a title="https://www.linkedin.com/in/yash-katwal/" href="https://www.linkedin.com/in/yash-katwal/" target="_blank" rel="noopener noreferrer" class="text-dark">Yash Katwal </a></p>
+                            <p><a title="https://irisd-1.web.app/" href="https://irisd-1.web.app/" target="_blank" rel="noopener noreferrer" class="text-dark">Yunyi Ding</a></p>
+                            <p><a title="https://www.linkedin.com/in/jacqueline-cy-hsu" href="https://www.linkedin.com/in/jacqueline-cy-hsu" target="_blank" rel="noopener noreferrer" class="text-dark">Jacqueline Hsu </a></p>
+                            <p><a title="https://www.linkedin.com/in/avirajsingh25" href="https://www.linkedin.com/in/avirajsingh25" target="_blank" rel="noopener noreferrer" class="text-dark">Aviraj Singh</a></p>
+                            <p><a title="https://www.linkedin.com/in/zhuoyan-liu-70a5151bb/" href="https://www.linkedin.com/in/zhuoyan-liu-70a5151bb/" target="_blank" rel="noopener noreferrer" class="text-dark">Zhuoyan(Louise) Liu</a></p>
+                            <p>Haochen He</p>
                         </div>
 
                     </section>
