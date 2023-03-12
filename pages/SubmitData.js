@@ -11,35 +11,7 @@ export default function SubmitData() {
             <Navbar />
             <div class="row" id="section4">
                 <div class="testbox">
-                    <form action="mailto:research@adioscovid.org?subject=Long Covid Research University of Washington - Data Submission" method="POST" enctype="text/plain">
-                        <div class="banner">
-                            <h1 id="form-title">{t("form-title")}</h1>
-                        </div>
-                        <p>{t("form-content1")}</p>
-                        <p>{t("form-content2")}</p>
-                        <hr />
-                        <fieldset>
-                            <legend>{t("form-legend")}</legend>
-                            <div class="item">
-                                <div class="name-item">
-                                    <div>
-                                        <input type="text" name="zipcode" placeholder="ZIP Code" />
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <label for="description">{t("form-description0")}<span>*</span></label>
-                                <input id="Hispanic/Latinos" type="text" name="Hispanic/Latinos" placeholder="Yes/No" required />
-                            </div>
-                            <div class="item">
-                                <label for="description">{t("form-description1")}<span>*</span></label>
-                                <input id="description" type="text" name="description" required />
-                            </div>
-                        </fieldset>
-                        <div class="btn-block">
-                            <button id="submit_button" type="submit" href="/">{t("SUBMIT")}</button>
-                        </div>
-                    </form>
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfpfRDn4qVNpUVGxizBp1N-V__JsDbipu_bTZf6Jex8G5uVgA/viewform?embedded=true" width="640" height="2158" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
                 </div>
             </div>
             <Footer />
