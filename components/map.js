@@ -119,6 +119,8 @@ export default function MapPage() {
             <h2>US population density</h2>
             <p>Hover over a County!</p>
             <div id='text-description'>
+            /* From the hover data, get the county name and use it to fetch the couny specific API
+            */
             {hoverInfo && (
               <p>County: {hoverInfo.feature.properties.name}</p>
 
