@@ -27,7 +27,7 @@ export default function Footer() {
             <h3>{t("Footer-Title2")}</h3>
             <ul class="list-group">
               <li class="list-group-item text-dark">{t("Footer-ContactUS")}</li>
-              <li class="list-group-item"><a href="mailto:research@adioscovid.org" class="text-dark"><i class="fa fa-envelope" aria-hidden="true"></i>research@adioscovid.org</a></li>
+              <li class="list-group-item"><a href="mailto:community@adioscovid.org" class="text-dark"><i class="fa fa-envelope" aria-hidden="true"></i>community@adioscovid.org</a></li>
             </ul>
           </div>
         </div>
